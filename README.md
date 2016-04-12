@@ -1,1 +1,1 @@
-# wck2016-site
+# WordCamp Kansai 2016 Site Design
