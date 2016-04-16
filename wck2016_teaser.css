@@ -18,7 +18,6 @@
 	order: 1;
 	height: auto;
 }
-}
 
 .entry-content {
 	order: 3;
@@ -26,7 +25,6 @@
 
 .entry-footer {
 	order: 4;
-}
 }
 
 .post-thumbnail img {
