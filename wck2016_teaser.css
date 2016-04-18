@@ -141,21 +141,21 @@ dd {
 }
 
 /*メルマガ 登録*/
-#contact-form-9 {
+.contact-form {
 	width: 100%;
 	padding: 40px 60px 20px;
 	background: #547296;
 	overflow: hidden;
 }
 
-#contact-form-9 label {
+.contact-form label {
 	width: 100%;
 	color: #fff;
 	position: absolute;
 	bottom: 0;
 }
 
-#contact-form-9 form > div {
+.contact-form > div {
 	position: relative;
 	width: 60%;
 	float: left;
