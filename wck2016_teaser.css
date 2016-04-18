@@ -102,7 +102,7 @@ dl {
 dt {
 	width: 25%;
 	float: left;
-	left; clear;
+	left: clear;
 	display: table-cell;
 }
 dd {
