@@ -101,7 +101,7 @@ dl {
 dt {
 	width: 25%;
 	float: left;
-	left: clear;
+	clear; left;
 	display: table-cell;
 }
 dd {
