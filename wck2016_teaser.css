@@ -152,11 +152,24 @@ h1,
 }
 .home .post-thumbnail {
   width: 100%;
-  margin: 0 0 100px;
+  margin: 0 0 50px;
+}
+@media screen and (min-width: 44.375em) {
+  .home .post-thumbnail {
+    margin: 0 0 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home .post-thumbnail {
+    margin: 0 0 25px;
+  }
+}
+.home .entry-content {
+  margin: 0 7.6923%;
 }
 @media screen and (min-width: 44.375em) {
   .home .entry-content {
-    margin: 0 7.6923%;
+    margin: 0 15%;
   }
 }
 .home table th {
@@ -174,12 +187,25 @@ h1,
   overflow: hidden;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .contact-form {
+    padding: 20px 35% 20px;
+  }
+}
 .contact-form > div {
   text-align: left;
   position: relative;
   width: 78%;
   float: left;
   margin-right: 2%;
+}
+@media screen and (max-width: 480px) {
+  .contact-form > div {
+    text-align: center;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
 }
 .contact-form > div label {
   width: 100%;
@@ -193,6 +219,13 @@ h1,
 .contact-form .contact-submit {
   width: 20%;
   float: right;
+}
+@media screen and (max-width: 480px) {
+  .contact-form .contact-submit {
+    width: 30%;
+    float: none;
+    margin: 0 auto;
+  }
 }
 .contact-form .contact-submit input[type="submit"] {
   width: 100%;

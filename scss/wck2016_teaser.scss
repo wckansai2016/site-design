@@ -153,11 +153,18 @@ h1,
   }
   .post-thumbnail {
     width: 100%;
-    margin: 0 0 100px;;
+    margin: 0 0 50px;
+    @media screen and (min-width: 44.375em) {
+      margin: 0 0 100px;
+    }
+    @media screen and (max-width: 480px) {
+      margin: 0 0 25px;
+    }
   }
   .entry-content {
+    margin: 0 7.6923%;
     @media screen and (min-width: 44.375em) {
-      margin: 0 7.6923%;
+      margin: 0 15%;
     }
 
   }
@@ -178,12 +185,21 @@ h1,
   background: #547296;
   overflow: hidden;
   text-align: center;
+  @media screen and (max-width: 480px) {
+    padding: 20px 35% 20px;
+  }
   >  div {
     text-align: left;
     position: relative;
     width: 78%;
     float: left;
     margin-right: 2%;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
     label {
       width: 100%;
       color: #ffffff;
@@ -197,6 +213,11 @@ h1,
   .contact-submit {
     width: 20%;
     float: right;
+    @media screen and (max-width: 480px) {
+      width: 30%;
+      float: none;
+      margin: 0 auto;
+    }
     input[type="submit"] {
       width: 100%;
     }
