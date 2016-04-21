@@ -103,9 +103,12 @@ h1,
   font-size: 1.2rem;
 }
 
+.link-wrapper {
+  margin: 1.5em 0;
+}
+
 .btn {
   display: block;
-  margin: 1.5em 0;
   padding: 1em;
   text-align: center;
   background-color: #eeeeee;
