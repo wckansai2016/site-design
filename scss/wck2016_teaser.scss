@@ -166,25 +166,32 @@ h1,
 }
 
 .contact-form {
-  width: 100%;
-  padding: 40px 60px 20px;
+  margin: 0 -30%;
+  padding: 40px 35% 20px;
   background: #547296;
   overflow: hidden;
-  label {
-    width: 100%;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-  }
+  text-align: center;
   >  div {
+    text-align: left;
     position: relative;
-    width: 60%;
+    width: 78%;
     float: left;
     margin-right: 2%;
+    label {
+      width: 100%;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      input[type="text"] {
+        width: 100%;
+      }
+    }
   }
-}
-
-.contact-submit {
-  width: 38%;
-  float: right;
+  .contact-submit {
+    width: 20%;
+    float: right;
+    input[type="submit"] {
+      width: 100%;
+    }
+  }
 }
