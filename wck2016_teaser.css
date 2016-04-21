@@ -103,6 +103,29 @@ h1,
   font-size: 1.2rem;
 }
 
+.btn {
+  display: block;
+  margin: 1.5em 0;
+  padding: .5em 1em;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #333333;
+  text-decoration: none;
+  box-shadow: none !important;
+}
+.btn:hover {
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+.btn-link {
+  background-color: #273c51;
+  color: #ffffff;
+}
+.btn-link:hover {
+  background-color: rgba(39, 60, 81, 0.8);
+}
+
 .site {
   padding: 0;
   margin: 0 !important;
@@ -229,6 +252,42 @@ h1,
 }
 .contact-form .contact-submit input[type="submit"] {
   width: 100%;
+}
+
+.link-relation {
+  display: flex;
+  margin: 30px -15px;
+  text-align: center;
+}
+@media screen and (max-width: 44.374em) {
+  .link-relation {
+    display: block;
+  }
+}
+.link-relation .link-inner {
+  text-align: left;
+  flex: 1;
+  width: 50%;
+  padding: 0 15px;
+}
+@media screen and (max-width: 44.374em) {
+  .link-relation .link-inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 44.374em) {
+  .link-relation .link-inner .btn-link {
+    width: 50%;
+    margin: 1.5em auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .link-relation .link-inner .btn-link {
+    width: 100%;
+  }
+}
+.link-relation .link-inner small {
+  line-height: 1.5 !important;
 }
 
 /*# sourceMappingURL=wck2016_teaser.css.map */

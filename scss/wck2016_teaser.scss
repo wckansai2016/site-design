@@ -101,6 +101,28 @@ h1,
   }
 }
 
+.btn {
+  display: block;
+  margin: 1.5em 0;
+  padding: .5em 1em;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #333333;
+  text-decoration: none;
+  box-shadow: none !important;
+  &:hover {
+    background-color: #333333;
+    color: #eeeeee;
+  }
+}
+.btn-link {
+  background-color: #273c51;
+  color: #ffffff;
+  &:hover {
+    background-color: rgba(#273c51, 0.8);
+  }
+}
+
 .site {
   padding: 0;
   margin: 0 !important;
@@ -220,6 +242,36 @@ h1,
     }
     input[type="submit"] {
       width: 100%;
+    }
+  }
+}
+
+.link-relation {
+  display: flex;
+  margin: 30px -15px;
+  text-align: center;
+  @media screen and (max-width: 44.374em) {
+    display: block;
+  }
+  .link-inner {
+    text-align: left;
+    flex: 1;
+    width: 50%;
+    padding: 0 15px;
+    @media screen and (max-width: 44.374em) {
+      width: 100%;
+    }
+    .btn-link {
+      @media screen and (max-width: 44.374em) {
+        width: 50%;
+        margin: 1.5em auto;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+    small {
+      line-height: 1.5 !important;
     }
   }
 }
