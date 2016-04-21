@@ -146,37 +146,59 @@ h1,
   padding: 30px;
 }
 
-.type-page {
+.home .type-page {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
-
-.post-thumbnail {
-  order: 1;
-  height: auto;
-}
-
-.entry-content {
-  order: 3;
-}
-
-.entry-footer {
-  order: 4;
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-}
-
-.home .entry-header,
-.home header {
+.home .site-header {
   display: none;
 }
-.home .site-content {
-  padding: 0;
+@media screen and (max-width: 44.374em) {
+  .home .site-header {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 0 1.076923077em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .home .site-header .site-branding {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .home .site-header .menu-toggle,
+  .home .site-header .main-navigation {
+    background-color: #ffffff;
+  }
+  .home .site-header .menu-toggle.toggled-on {
+    color: #1a1a1a !important;
+  }
+  .home .site-header .main-navigation {
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+  }
+  .home .site-header .main-navigation a {
+    padding: 0.84375em;
+  }
+}
+.home .entry-header,
+.home .entry-content {
+  margin: 0 7.6923%;
+}
+@media screen and (min-width: 44.375em) {
+  .home .entry-header,
+  .home .entry-content {
+    margin: 0 15%;
+  }
+}
+.home .entry-header {
+  display: none;
+  order: 2;
 }
 .home .post-thumbnail {
+  order: 1;
   width: 100%;
   margin: 0 0 50px;
 }
@@ -190,13 +212,18 @@ h1,
     margin: 0 0 25px;
   }
 }
-.home .entry-content {
-  margin: 0 7.6923%;
+.home .post-thumbnail img {
+  width: 100%;
+  height: auto;
 }
-@media screen and (min-width: 44.375em) {
-  .home .entry-content {
-    margin: 0 15%;
-  }
+.home .entry-content {
+  order: 3;
+}
+.home .entry-footer {
+  order: 4;
+}
+.home .site-content {
+  padding: 0;
 }
 .home table th {
   width: 20%;
@@ -291,6 +318,31 @@ h1,
 }
 .link-relation .link-inner small {
   line-height: 1.5 !important;
+}
+
+.front-navigation {
+  text-align: center;
+  margin: -75px -30% 100px;
+}
+@media screen and (max-width: 44.374em) {
+  .front-navigation {
+    display: none;
+  }
+}
+.front-navigation ul {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+.front-navigation ul li {
+  display: inline-block;
+  padding: 0 .75em;
+  margin: 0;
+  border-right: 1px solid #dddddd;
+}
+.front-navigation ul li:last-child {
+  border-left: none;
 }
 
 /*# sourceMappingURL=wck2016_teaser.css.map */

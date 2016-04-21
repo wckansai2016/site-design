@@ -143,40 +143,57 @@ h1,
   padding: 30px;
 }
 
-.type-page {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.post-thumbnail {
-  order: 1;
-  height: auto;
-}
-
-.entry-content {
-  order: 3;
-}
-
-.entry-footer {
-  order: 4;
-}
-
-.post-thumbnail {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .home {
-  .entry-header,
-  header {
-    display: none;
+  .type-page {
+    display: flex;
+    flex-direction: column;
   }
-  .site-content {
-    padding: 0;
+  .site-header {
+    display: none;
+    @media screen and (max-width: 44.374em) {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding: 0 1.076923077em;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      .site-branding {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .menu-toggle,
+      .main-navigation {
+        background-color: #ffffff;
+      }
+      .menu-toggle {
+        &.toggled-on {
+          color: #1a1a1a !important;
+        }
+      }
+      .main-navigation {
+        border-left: 1px solid #d1d1d1;
+        border-right: 1px solid #d1d1d1;
+        a {
+          padding: 0.84375em;
+        }
+      }
+    }
+  }
+  .entry-header,
+  .entry-content {
+    margin: 0 7.6923%;
+    @media screen and (min-width: 44.375em) {
+      margin: 0 15%;
+    }
+  }
+  .entry-header {
+    display: none;
+    order: 2;
   }
   .post-thumbnail {
+    order: 1;
     width: 100%;
     margin: 0 0 50px;
     @media screen and (min-width: 44.375em) {
@@ -185,13 +202,19 @@ h1,
     @media screen and (max-width: 480px) {
       margin: 0 0 25px;
     }
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .entry-content {
-    margin: 0 7.6923%;
-    @media screen and (min-width: 44.375em) {
-      margin: 0 15%;
-    }
-
+    order: 3;
+  }
+  .entry-footer {
+    order: 4;
+  }
+  .site-content {
+    padding: 0;
   }
   table {
     th {
@@ -275,6 +298,29 @@ h1,
     }
     small {
       line-height: 1.5 !important;
+    }
+  }
+}
+
+.front-navigation {
+  text-align: center;
+  margin: -75px -30% 100px;
+  @media screen and (max-width: 44.374em) {
+    display: none;
+  }
+  ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding: 0 .75em;
+      margin: 0;
+      border-right: 1px solid #dddddd;
+      &:last-child {
+        border-left: none;
+      }
     }
   }
 }
