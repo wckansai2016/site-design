@@ -3,7 +3,8 @@ body {
   background: #fff;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, helvetica, arial, ‘hiragino kaku gothic pro’, meiryo, ‘ms pgothic’, sans-serif !important;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 body,
 button,
@@ -223,7 +224,7 @@ h1,
   font-size: .9rem; }
 
 .contact-form {
-  margin: 0 -21.4%;
+  margin: 0 -30%;
   padding: 40px 35% 20px;
   background: #547296;
   overflow: hidden;
