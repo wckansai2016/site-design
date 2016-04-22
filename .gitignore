@@ -2,3 +2,7 @@
 .idea/
 .sass-cache/
 *.map
+gulpfile.js
+package.json
+node_modules/
+style.css
