@@ -325,3 +325,10 @@ h1,
     }
   }
 }
+
+.sharedaddy {
+  &:before,
+  &:last-child:after {
+    left: 0;
+  }
+}

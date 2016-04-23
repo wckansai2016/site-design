@@ -346,4 +346,8 @@ h1,
   border-left: none;
 }
 
+.sharedaddy:before, .sharedaddy:last-child:after {
+  left: 0;
+}
+
 /*# sourceMappingURL=wck2016_teaser.css.map */
