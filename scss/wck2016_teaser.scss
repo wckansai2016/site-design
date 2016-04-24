@@ -70,13 +70,28 @@ dl {
       margin: 0;
     }
   }
-
   dd {
     width: 70%;
     margin: 0 0 .5em;
     @media screen and (max-width: 44.374em) {
       width: 100%;
       margin: 0 0 1em;
+    }
+  }
+  &.dl-ja {
+    dt {
+      width: 5em;
+    }
+    dd {
+      margin-left: 8em;
+    }
+  }
+  &.dl-en {
+    dt {
+      width: 10em;
+    }
+    dd {
+      margin-left: 13em;
     }
   }
 }
