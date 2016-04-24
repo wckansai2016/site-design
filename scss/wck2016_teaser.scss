@@ -247,8 +247,12 @@ h1,
   background: #547296;
   overflow: hidden;
   text-align: center;
+  @media screen and (max-width: 44.374em) {
+    margin: 0 -7.6923%;
+    padding: 40px 7.6923% 20px;
+  }
   @media screen and (max-width: 480px) {
-    padding: 20px 35% 20px;
+    padding: 20px 7.6923% 20px;
   }
   >  div {
     text-align: left;
