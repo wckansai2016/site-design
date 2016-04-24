@@ -56,19 +56,29 @@ input[type="submit"] {
 }
 
 dl {
-  width: 70%;
-}
+  margin: 1.75em 0;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 44.374em) {
+    display: block;
+  }
+  dt {
+    width: 30%;
+    margin: 0 0 .5em;
+    @media screen and (max-width: 44.374em) {
+      width: 100%;
+      margin: 0;
+    }
+  }
 
-dt {
-  width: 25%;
-  float: left;
-  clear: left;
-  display: table-cell;
-}
-
-dd {
-  width: 70%;
-  margin: 0 0 10px 25%;
+  dd {
+    width: 70%;
+    margin: 0 0 .5em;
+    @media screen and (max-width: 44.374em) {
+      width: 100%;
+      margin: 0 0 1em;
+    }
+  }
 }
 
 h1,
