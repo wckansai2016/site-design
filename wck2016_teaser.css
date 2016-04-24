@@ -82,10 +82,16 @@ dl dd {
   }
 }
 dl.dl-ja dt {
-  width: 20%;
+  width: 8em;
 }
 dl.dl-ja dd {
-  width: 80%;
+  width: calc(100% - 8em);
+}
+dl.dl-en dt {
+  width: 13em;
+}
+dl.dl-en dd {
+  width: calc(100% - 13em);
 }
 
 h1,
