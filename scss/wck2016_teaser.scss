@@ -80,12 +80,11 @@ dl {
   }
   &.dl-ja {
     dt {
-      width: 5em;
+      width: 20%;
     }
-  }
-  &.dl-en {
-    dt {
-      width: 10em;
+    dd {
+      width: 80%;
+
     }
   }
 }
