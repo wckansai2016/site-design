@@ -165,6 +165,7 @@ h1,
 .home .type-page {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .home .site-header {
   display: none;
@@ -255,15 +256,21 @@ h1,
 }
 
 .contact-form {
-  margin: 0 -30%;
+  margin: 0 -22.6923%;
   padding: 40px 35% 20px;
   background: #547296;
   overflow: hidden;
   text-align: center;
 }
+@media screen and (max-width: 44.374em) {
+  .contact-form {
+    margin: 0 -9.6923%;
+    padding: 40px 7.6923% 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .contact-form {
-    padding: 20px 35% 20px;
+    padding: 20px 7.6923% 20px;
   }
 }
 .contact-form > div {
@@ -343,7 +350,7 @@ h1,
 
 .front-navigation {
   text-align: center;
-  margin: -75px -30% 100px;
+  margin: -75px -20% 100px;
 }
 @media screen and (max-width: 44.374em) {
   .front-navigation {
