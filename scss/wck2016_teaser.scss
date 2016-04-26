@@ -353,7 +353,12 @@ h1,
       margin: 0;
       border-right: 1px solid #dddddd;
       &:last-child {
-        border-left: none;
+        border-right: none;
+      }
+      @media screen and (max-width: 800px) {
+        a {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -382,7 +382,12 @@ h1,
   border-right: 1px solid #dddddd;
 }
 .front-navigation ul li:last-child {
-  border-left: none;
+  border-right: none;
+}
+@media screen and (max-width: 800px) {
+  .front-navigation ul li a {
+    font-size: 14px;
+  }
 }
 
 .sharedaddy:before, .sharedaddy:last-child:after {
