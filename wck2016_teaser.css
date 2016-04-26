@@ -384,6 +384,11 @@ h1,
 .front-navigation ul li:last-child {
   border-right: none;
 }
+@media screen and (max-width: 800px) {
+  .front-navigation ul li a {
+    font-size: 14px;
+  }
+}
 
 .sharedaddy:before, .sharedaddy:last-child:after {
   left: 0;
