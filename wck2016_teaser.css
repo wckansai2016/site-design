@@ -382,7 +382,7 @@ h1,
   border-right: 1px solid #dddddd;
 }
 .front-navigation ul li:last-child {
-  border-left: none;
+  border-right: none;
 }
 
 .sharedaddy:before, .sharedaddy:last-child:after {
