@@ -267,7 +267,7 @@ h1,
   font-size: .9rem;
 }
 
-.contact-form {
+#contact-form-97 .contact-form {
   margin: 0 -22.6923%;
   padding: 40px 35% 20px;
   background: #547296;
@@ -275,17 +275,17 @@ h1,
   text-align: center;
 }
 @media screen and (max-width: 44.374em) {
-  .contact-form {
+  #contact-form-97 .contact-form {
     margin: 0 -9.6923%;
     padding: 40px 7.6923% 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  .contact-form {
+  #contact-form-97 .contact-form {
     padding: 20px 7.6923% 20px;
   }
 }
-.contact-form > div {
+#contact-form-97 .contact-form > div {
   text-align: left;
   position: relative;
   width: 78%;
@@ -293,34 +293,34 @@ h1,
   margin-right: 2%;
 }
 @media screen and (max-width: 480px) {
-  .contact-form > div {
+  #contact-form-97 .contact-form > div {
     text-align: center;
     width: 100%;
     float: none;
     margin-right: 0;
   }
 }
-.contact-form > div label {
+#contact-form-97 .contact-form > div label {
   width: 100%;
   color: #ffffff !important;
   position: absolute;
   bottom: 0;
 }
-.contact-form > div label input[type="text"] {
+#contact-form-97 .contact-form > div label input[type="text"] {
   width: 100%;
 }
-.contact-form .contact-submit {
+#contact-form-97 .contact-form .contact-submit {
   width: 20%;
   float: right;
 }
 @media screen and (max-width: 480px) {
-  .contact-form .contact-submit {
+  #contact-form-97 .contact-form .contact-submit {
     width: 30%;
     float: none;
     margin: 0 auto;
   }
 }
-.contact-form .contact-submit input[type="submit"] {
+#contact-form-97 .contact-form .contact-submit input[type="submit"] {
   width: 100%;
 }
 
