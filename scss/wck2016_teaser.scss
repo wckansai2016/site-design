@@ -1,3 +1,5 @@
+/*sass*/
+
 body {
   background: #fff;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, helvetica, arial, ‘hiragino kaku gothic pro’, meiryo, ‘ms pgothic’, sans-serif !important;
@@ -68,6 +70,7 @@ dl {
     @media screen and (max-width: 44.374em) {
       width: 100%;
       margin: 0;
+
     }
   }
   dd {
@@ -94,6 +97,10 @@ dl {
       width: calc(100% - 13em);
     }
   }
+}
+
+ul {
+  margin-left: 1.5em!important;
 }
 
 h1,
