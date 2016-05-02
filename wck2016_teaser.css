@@ -356,6 +356,7 @@ h1,
 
 .link-relation {
   display: flex;
+  flex-wrap: wrap;
   margin: 30px -15px;
   text-align: center;
 }
@@ -374,6 +375,10 @@ h1,
   .link-relation .link-inner {
     width: 100%;
   }
+}
+.link-relation .link-inner.link-staff {
+  width: 100%;
+  flex: none;
 }
 @media screen and (max-width: 44.374em) {
   .link-relation .link-inner .btn-link {
@@ -423,3 +428,5 @@ h1,
 .sharedaddy:before, .sharedaddy:last-child:after {
   left: 0;
 }
+
+/*# sourceMappingURL=wck2016_teaser.css.map */

@@ -341,6 +341,7 @@ h1,
 
 .link-relation {
   display: flex;
+  flex-wrap: wrap;
   margin: 30px -15px;
   text-align: center;
   @media screen and (max-width: 44.374em) {
@@ -353,6 +354,10 @@ h1,
     padding: 0 15px;
     @media screen and (max-width: 44.374em) {
       width: 100%;
+    }
+    &.link-staff {
+      width: 100%;
+      flex: none;
     }
     .btn-link {
       @media screen and (max-width: 44.374em) {
