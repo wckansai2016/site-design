@@ -205,7 +205,11 @@ h1,
   overflow: hidden;
 }
 .home .site-header {
-  display: none;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 @media screen and (max-width: 44.374em) {
   .home .site-header {
@@ -215,6 +219,8 @@ h1,
     padding: 0 1.076923077em;
     position: relative;
     z-index: 10;
+    overflow: visible;
+    clip: auto;
   }
   .home .site-header .site-branding {
     visibility: hidden;
