@@ -205,11 +205,12 @@ h1,
   overflow: hidden;
 }
 .home .site-header {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
 }
 @media screen and (max-width: 44.374em) {
   .home .site-header {
