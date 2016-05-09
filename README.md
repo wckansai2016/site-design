@@ -3,26 +3,22 @@
 ## File list
 
 ### CSS Files
-* wck2016_main.css
-* wck2016_teaser.css
+* css/wck2016_main.css
+* css/wck2016_teaser.css
 
 ### SASS Files
-* wck2016_main.scss
-* wck2016_teaser.scss
-
-####include files (for wck2016_main)
-Coming soon.
+* scss/wck2016_main.scss
+* scss/wck2016_teaser.scss
 
 ##How to use this files
-### Steps
+### For developers steps
 1. Install theme "twenty-sixteen" to your WordPress site
 2. Create child theme directory "site-design"
 3. Clone this repository to "site-design" directory
-4. Create style.css to "site-design" directory
-5. Write the following code in style.css
+4. Create style.css to "site-design" directory and write the following code in style.css
 
-#### Common
-    /*
+####style.css
+      /*
      Theme Name:   WordCamp Kansai 2016 main site.
      Theme URI:    https://github.com/wckansai2016/site-design
      Description:  This theme is WordCamp Kansai 2016 original design.
@@ -34,10 +30,44 @@ Coming soon.
      License URI:  http://www.gnu.org/licenses/gpl-2.0.html
      Text Domain:  wck2016-main
     */
-#### for main site
-    @import "css/wck2016_main.css";
-#### for teaser site
-    @import "css/wck2016_teaser.css";
+
+6. Create functions.php and write and write the following code in functions.php
+
+#### functions.php
+##### For main site
+    add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+    function theme_enqueue_styles() {
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'child-style',
+            get_stylesheet_directory_uri() . '/css/wck2016_main.css',
+            array('parent-style')
+        );
+    }
+
+##### For teaser site
+    add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+    function theme_enqueue_styles() {
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'child-style',
+            get_stylesheet_directory_uri() . '/css/wck2016_teaser.css',
+            array('parent-style')
+        );
+    }
 
 6. Activate this child theme.
 7. Enjoy development!
+
+### For organizer steps
+1. Activate Jetpack function "Remote CSS"
+2. Access menu "Appearance" -> "Remote CSS"
+3. Input the following css path to text field "Remote CSS file"
+
+##### For main site
+    https://github.com/wckansai2016/site-design/blob/master/css/wck2016_main.css
+
+##### For teaser site
+    https://github.com/wckansai2016/site-design/blob/master/css/wck2016_teaser.css
+
+4. Push save
+5. Update field, and display path of Github is converted to the path of the API automatically
+6. Design to your site is reflected!
