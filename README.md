@@ -58,9 +58,10 @@
 7. Enjoy development!
 
 ### For organizer steps
-1. Activate Jetpack function "Remote CSS"
-2. Access menu "Appearance" -> "Remote CSS"
-3. Input the following css path to text field "Remote CSS file"
+1. Login your wordcamp site
+2. Activate Jetpack function "Remote CSS"
+3. Access menu "Appearance" -> "Remote CSS"
+4. Input the following css path to text field "Remote CSS file"
 
 ##### For main site
     https://github.com/wckansai2016/site-design/blob/master/css/wck2016_main.css
@@ -68,6 +69,6 @@
 ##### For teaser site
     https://github.com/wckansai2016/site-design/blob/master/css/wck2016_teaser.css
 
-4. Push save
-5. Update field, and display path of Github is converted to the path of the API automatically
-6. Design to your site is reflected!
+5. Push save button
+6. Update field, and display path of Github is converted to the path of the API automatically
+7. Design to your site is reflected!
