@@ -1,9 +1,8 @@
-@import "includes/modules";
-@import "includes/normalize";
-@import "includes/post-content";
-@import "includes/layout";
-@import "includes/page-common";
-@import "includes/page-front";
-@import "includes/page-content";
-@import "includes/page-timeline";
-@import "includes/single";
+@import "settings/variables";
+@import "settings/normalize";
+@import "modules/post-content";
+@import "modules/layout";
+@import "modules/page-common";
+@import "modules/page-front";
+@import "modules/page-timetable";
+@import "modules/single"
