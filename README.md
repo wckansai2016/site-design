@@ -1,12 +1,15 @@
 # WordCamp Kansai 2016 Site Design
 
 ## File list
+
 ### CSS Files
 * wck2016_main.css
 * wck2016_teaser.css
+
 ### SASS Files
 * wck2016_main.scss
 * wck2016_teaser.scss
+
 ####include files (for wck2016_main)
 Coming soon.
 
