@@ -11,7 +11,7 @@
 * scss/wck2016_teaser.scss
 
 ##How to use this files
-### For developers steps
+### For contributor steps
 1. Install theme "twenty-sixteen" to your WordPress site
 2. Create child theme directory "site-design"
 3. Clone this repository to "site-design" directory
