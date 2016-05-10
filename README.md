@@ -11,14 +11,14 @@
 * scss/wck2016_teaser.scss
 
 ##How to use this files
-### For developers steps
+### For contributor steps
 1. Install theme "twenty-sixteen" to your WordPress site
 2. Create child theme directory "site-design"
 3. Clone this repository to "site-design" directory
 4. Create style.css to "site-design" directory and write the following code in style.css
 
 ####style.css
-      /*
+    /*
      Theme Name:   WordCamp Kansai 2016 main site.
      Theme URI:    https://github.com/wckansai2016/site-design
      Description:  This theme is WordCamp Kansai 2016 original design.
