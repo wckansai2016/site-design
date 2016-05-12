@@ -12,3 +12,28 @@ $color-base: $color-white;
 $color-text: $color-black;
 $color-main: $color-blue-dark;
 $color-accent: $color-red;
+
+//breakpoints
+$breakpoints-2to1-min: 56.875em;
+$breakpoints-2to1-max: 56.874em;
+$breakpoints-fit-min: 44.375em;
+$breakpoints-fit-max: 44.374em;
+
+//media query settings
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
