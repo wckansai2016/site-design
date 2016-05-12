@@ -54,35 +54,62 @@ body {
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 40px;
     border: none;
-    background-color: $color-white;
+    background-color: $color-main;
+    color: $color-white;
     margin: 0 0;
+    &.toggled-on {
+      background-color: rgba($color-main, 0.8);
+      &:hover,&:focus {
+        background-color: rgba($color-main, 0.8);
+      }
+    }
   }
   .site-header-menu {
     position: relative;
     z-index: 10;
     width: 100%;
-    background-color: $color-white;
+    background-color: $color-blue;
     margin: 0 0;
     text-align: center;
-    .primary-menu {
-      display: inline-block;
-      margin: 0 auto;
-      > li {
-        height: 40px;
-        a {
-          height: 100%;
-          line-height: 40px;
+    .main-navigation {
+      .primary-menu {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        @include min-screen($breakpoints-2to1-min) {
+          display: inline-block;
         }
-        &.menu-item-has-children {
-          > a {
-            &:after {
-              top: 50%;
-              margin-top: 3px;
-            }
+        li {
+          background-color: $color-blue;
+          border-top: 1px solid $color-blue-dark;
+          @include min-screen($breakpoints-2to1-min) {
+            border-top: none;
+          }
+          &.menu-item-has-children {
+            padding-right: 1.25em;
+          }
+          a {
+            padding: 0.65625em 0.875em;
+            color: $color-white;
           }
         }
+      }
+      .sub-menu {
+        @include min-screen($breakpoints-2to1-min) {
+          border-color: $color-blue-dark;
+          li {
+            border-color: $color-blue-dark;
+            border-top: 1px solid $color-blue-dark;
+          }
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .dropdown-toggle {
+        color: $color-white;
       }
     }
   }
