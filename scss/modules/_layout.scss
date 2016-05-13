@@ -69,22 +69,27 @@ body {
     position: relative;
     z-index: 10;
     width: 100%;
-    background-color: $color-blue;
-    margin: 0 0;
+    background-color: $color-blue-dark;
+    margin: 0;
     text-align: center;
     .main-navigation {
+      > div {
+        height: 42px;
+      }
       .primary-menu {
         display: block;
         margin: 0 auto;
         text-align: left;
         @include min-screen($breakpoints-2to1-min) {
           display: inline-block;
+          border: none;
         }
         li {
           background-color: $color-blue;
           border-top: 1px solid $color-blue-dark;
           @include min-screen($breakpoints-2to1-min) {
             border-top: none;
+            background: transparent;
           }
           &.menu-item-has-children {
             padding-right: 1.25em;
@@ -96,8 +101,9 @@ body {
         }
       }
       .sub-menu {
+        background-color: $color-blue;
         @include min-screen($breakpoints-2to1-min) {
-          border-color: $color-blue-dark;
+          border: none;
           li {
             border-color: $color-blue-dark;
             border-top: 1px solid $color-blue-dark;
