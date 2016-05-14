@@ -48,12 +48,12 @@
     position: relative;
     z-index: 10;
     width: 100%;
-    background-color: $color-blue-dark;
+    background: url('../img/bg_global_menu.png') center center repeat;
     margin: 0;
     text-align: center;
     .main-navigation {
       > div {
-        height: 42px;
+        height: 90px;
       }
       .primary-menu {
         display: block;
@@ -63,29 +63,62 @@
           display: inline-block;
           border: none;
         }
-        li {
-          background-color: $color-blue;
+        > li {
           border-top: 1px solid $color-blue-dark;
+          padding: 0;
           @include min-screen($breakpoints-2to1-min) {
             border-top: none;
             background: transparent;
           }
-          &.menu-item-has-children {
-            padding-right: 1.25em;
+          &:hover {
+            background: url('../img/bg_global_menu_hover.png') center center repeat;
           }
-          a {
-            padding: 0.65625em 0.875em;
+          &:before {
+            display: block;
+            width: 1px;
+            height: 30px;
+            content: '';
+            background-color: $color-white;
+            position: absolute;
+            top: 30px;
+            left: 0;
+          }
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+          > a {
+            height: 100%;
+            line-height: 90px;
+            padding: 0 40px;
+            font-size: 16px;
             color: $color-white;
+            position: relative;
+            &:after {
+              display: inline-block;
+              width: 100%;
+              position: absolute;
+              top: auto;
+              right: 0;
+              bottom: 10px;
+              text-align: center;
+            }
           }
         }
       }
       .sub-menu {
-        background-color: $color-blue;
         @include min-screen($breakpoints-2to1-min) {
           border: none;
           li {
-            border-color: $color-blue-dark;
-            border-top: 1px solid $color-blue-dark;
+            border-color: transparent;
+            border-bottom: 1px dotted $color-white;
+            background: url('../img/bg_global_menu_hover.png') center center repeat;
+            a {
+              width: 16em;
+              padding: 30px 40px;
+              color: $color-white;
+            }
           }
           &:before,
           &:after {
