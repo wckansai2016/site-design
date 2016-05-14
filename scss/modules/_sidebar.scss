@@ -1,0 +1,67 @@
+//Sidebar layout style.
+
+$color-grey: #e8e8e8;
+$color-light-grey: #e8e8e8;
+$color-dark-green: #1d3501;
+
+$link-border-radious: 5px;
+
+//h2 widget title
+.widget-title{
+	text-align:center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $color-grey $color-grey $color-green;
+	background: -moz-linear-gradient(top, $color-white 0%, $color-light-grey 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $color-white 0%,$color-light-grey 100%); /* Chrome10-25,Safari5.1-6 */
+
+}
+
+.widget ul{
+	padding: 0.5em;
+	margin: 0;
+	background-color:#f7f7f7;
+}
+
+.widget li{
+	list-style: none;
+}
+
+.widget ul li:first-child a{
+	border-top-left-radius:$link-border-radious;
+	border-top-right-radius:$link-border-radious;
+}
+
+.widget ul li:last-child a{
+	border-bottom-left-radius:$link-border-radious;
+	border-bottom-right-radius:$link-border-radious;
+}
+
+.widget ul:only-child a{
+	order-radius:$link-border-radious;
+}
+	
+
+.widget li:not(:first-child) a{
+	border-top: 1px solid #63aa12;
+	
+}
+
+
+.widget li:not(:last-child) a{
+	border-bottom: 1px solid #a9ef58;
+	
+}
+
+.widget li a{
+	display: block;
+	color:$color-dark-green;
+	padding: 1em;
+	background-image:url(../img/bg_sidebar.png);
+}
+
+.widget li a:hover{
+	background-image:url(../img/bg_sidebar_active.png);
+}
+
+
