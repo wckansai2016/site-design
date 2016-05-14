@@ -4,18 +4,47 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		color: #000;
 	}
 
 	.wcorg-organizer {
 		position: relative;
-		border-top: 1px solid $color-green-light;
+		border: 1px solid #00baff;
 		padding: 20px;
-		margin-bottom: 10px;
-		background: #EEE;
+		margin-bottom: 20px;
+		background: rgba( #6bddff, 0.4 );
 
 		@include min-screen($breakpoints-2to1-min) {
 			max-width: 32%;
 			flex-basis: 32%;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			z-index: 2;
+		}
+
+		&:nth-of-type( odd ) {
+			&:before {
+				width: 165px;
+				height: 112px;
+				background: url(../img/bg_cloud_type01.png) no-repeat center top;
+				top: 20px;
+			}
+		}
+
+		&:nth-of-type( even ) {
+			&:before {
+				width: 121px;
+				height: 56px;
+				background: url(../img/bg_cloud_type02.png) no-repeat center top;
+				top: 86px;
+			}
 		}
 
 		.avatar {
@@ -53,6 +82,7 @@
 				display: block;
 				text-align: center;
 				margin: 25px 0;
+				color: #00baff;
 
 				@include min-screen($breakpoints-2to1-min) {
 					margin: 15px 0;
@@ -64,6 +94,10 @@
 			list-style: none;
 			margin-left: 0;
 			margin-bottom: 0;
+
+			a:hover {
+				color: $color-blue-dark;
+			}
 		}
 
 		.wcorg-organizer-url {
@@ -113,7 +147,7 @@
 			}
 
 			.genericon {
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 			}
 		}
 	}
