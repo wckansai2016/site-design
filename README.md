@@ -72,3 +72,16 @@
 5. Push save button
 6. Update field, and display path of Github is converted to the path of the API automatically
 7. Design to your site is reflected!
+
+### .gitignore
+Please refer to the .gitignore set to your environment.
+
+    .DS_Store
+    .idea/
+    .sass-cache/
+    *.map
+    gulpfile.js
+    package.json
+    node_modules/
+    style.css
+    functions.php
