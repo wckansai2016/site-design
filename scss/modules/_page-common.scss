@@ -1,1 +1,18 @@
 //Common page layout style.
+.site-main {
+  @include min-screen($breakpoints-2to1-min) {
+    width: 840px;
+  }
+  @include max-screen($breakpoints-2to1-max) {
+    width: 100%;
+  }
+}
+.sidebar {
+  @include min-screen($breakpoints-2to1-min) {
+    width: 300px;
+    margin-right: 900px;
+  }
+  @include max-screen($breakpoints-2to1-max) {
+    width: 100%;
+  }
+}
