@@ -5,5 +5,5 @@
 gulpfile.js
 package.json
 node_modules/
-style.css
+*.css
 functions.php
