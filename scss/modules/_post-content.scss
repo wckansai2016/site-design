@@ -36,4 +36,17 @@
   .post-navigation {
     border: none;
   }
+  table {
+    border-collapse: collapse;
+    th,
+    td {
+      border: 1px solid $color-green;
+    }
+    th {
+      background: rgba($color-green,0.3);
+    }
+  }
+  ul {
+    list-style-type: square;
+  }
 }
