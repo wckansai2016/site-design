@@ -14,8 +14,22 @@
 	color: $color-white;
 }
 
-@media screen and (min-width: #{$breakpoints-2to1-min})
-.site-footer {
-	
+@media screen and (min-width:#{$breakpoints-2to1-min}){
+.site-footer{
+	padding: 2em 0;
+	text-align: center;
 }
+	
+.site-info {
+	margin: 0;
+	display: block;
+	text-align: center;
+
+}
+
+}
+
+.kassy{
+	color: aliceblue;
+	
 }
