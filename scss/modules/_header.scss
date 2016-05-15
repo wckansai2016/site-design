@@ -93,6 +93,7 @@
           @include min-screen($breakpoints-2to1-min) {
             border-top: none;
             background: transparent;
+            z-index: 20;
           }
           &:hover {
             background: url('../img/bg_global_menu_hover.png') center center repeat;
