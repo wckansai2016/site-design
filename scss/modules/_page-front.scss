@@ -4,6 +4,9 @@
   .site-content {
     background: url('../img/front-contents-img-bg.png') no-repeat top center;
   }
+  .entry-header {
+    display: none;
+  }
   .post-thumbnail {
     display: none;
   }
@@ -14,6 +17,11 @@
     margin-bottom: 20px;
     h1 {
       font-size: 20px;
+    }
+  }
+  .entry-content {
+    a {
+      box-shadow: none;
     }
   }
   .front-menu {
@@ -33,7 +41,6 @@
         span {
           line-height: 1;
           display: block;
-          text-decoration: none;
         }
       }
     }
