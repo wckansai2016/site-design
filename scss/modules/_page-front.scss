@@ -1,7 +1,66 @@
 //Front page layout style.
 
 .home {
+  .site-content {
+    background: url('../img/front-contents-img-bg.png') no-repeat top center;
+  }
   .post-thumbnail {
     display: none;
+  }
+  .front-news {
+    padding: 30px 30px 0;
+    background: rgba($color-white,0.75);
+    border-bottom: 1px solid $color-blue-dark;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .front-menu {
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    margin-bottom: 60px;
+    li {
+      text-align: center;
+      background: rgba($color-blue-dark,0.75);
+      position: relative;
+      a {
+        display: block;
+        padding: 35px 0 0;
+        color: $color-white;
+        text-decoration: none;
+        span {
+          line-height: 1;
+          display: block;
+          text-decoration: none;
+        }
+      }
+    }
+    li::after {
+      font-size: 10px;
+      color: $color-white;
+      content: "▶";
+      width: 10px;
+      height: 17px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+    }
+    li:hover {
+      background: rgba($color-blue-dark,0.3);
+    }
+  }
+  @include min-screen($breakpoints-fit-max) {
+    .front-menu {
+      li {
+        width: 195px;
+        height: 120px;
+        margin-right: 20px;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
