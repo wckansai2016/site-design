@@ -1,12 +1,8 @@
-$footer-font-size : 18px;
-
 .site-footer{
-    background-image:url(../img/site_footer.jpg);
-    background-position: center center;
-    text-align: center;
-    color: $color-white;
-    padding: 100px 0;
-    height: 0;
+    padding: 0;
+    @include min-screen($breakpoints-2to1-min) {
+        padding: 0;
+    }
 }
 
 .site-footer .site-title {
@@ -15,7 +11,16 @@ $footer-font-size : 18px;
 
 .site-info{
     width: 100%;
+    margin: 0;
+    padding: 50px 30px;
+    background: url(../img/site_footer.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
     font-size:$footer-font-size;
+    color: $color-white;
+    @include min-screen($breakpoints-2to1-min) {
+        padding: 100px 0;
+    }
 }
 
 .site-footer span,.site-footer a,.site-footer a:hover{
