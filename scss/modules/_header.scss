@@ -52,6 +52,9 @@
     margin: 0;
     text-align: center;
     .main-navigation {
+      position: relative;
+      background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
+      background-size: cover;
       > div {
         height: 90px;
       }
@@ -59,9 +62,30 @@
         display: block;
         margin: 0 auto;
         text-align: left;
+        &:before, &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          z-index: 10;
+        }
+        &:before {
+          top: -60px;
+          left: -300px;
+          width: 313px;
+          height: 189px;
+          background: url('../img/gnavi_cloud_left.png') center center no-repeat;
+        }
+        &:after {
+          width: 328px;
+          height: 193px;
+          top: -40px;
+          right: -300px;
+          background: url('../img/gnavi_cloud_right.png') center center no-repeat;
+        }
         @include min-screen($breakpoints-2to1-min) {
           display: inline-block;
           border: none;
+          position: relative;
         }
         > li {
           border-top: 1px solid $color-blue-dark;
