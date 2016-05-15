@@ -5,6 +5,12 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		color: #000;
+		&:after {
+			display: block;
+			content: '';
+			max-width: 32%;
+			flex-basis: 32%
+		}
 	}
 
 	.wcorg-organizer {
