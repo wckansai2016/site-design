@@ -1,0 +1,35 @@
+.site-footer{
+    padding: 0;
+    @include min-screen($breakpoints-2to1-min) {
+        padding: 0;
+    }
+}
+
+.site-footer .site-title {
+    font-size:$footer-font-size;
+}
+
+.site-info{
+    width: 100%;
+    margin: 0;
+    padding: 50px 30px;
+    background: url(../img/site_footer.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size:$footer-font-size;
+    color: $color-white;
+    @include min-screen($breakpoints-2to1-min) {
+        padding: 100px 0;
+    }
+}
+
+.site-footer span,.site-footer a,.site-footer a:hover{
+    color: $color-white;
+}
+
+
+.site-info a:hover, .site-info a:focus{
+    color: $color-white;
+}
+
+
