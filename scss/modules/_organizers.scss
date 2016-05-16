@@ -21,6 +21,10 @@
     margin-bottom: 20px;
     background: rgba(#6bddff, 0.4);
     @include min-screen($breakpoints-2to1-min) {
+      max-width: 49%;
+      flex-basis: 49%;
+    }
+    @include min-screen($breakpoints-1200) {
       max-width: 32%;
       flex-basis: 32%;
     }
@@ -82,7 +86,6 @@
         text-align: center;
         margin: 25px 0;
         color: #00baff;
-
         @include min-screen($breakpoints-2to1-min) {
           margin: 15px 0;
         }
