@@ -103,18 +103,18 @@ $widget-link-padding: 8px;
 
   //JetPack Widget Image
   .jetpack-image-container {
-
-  }
-
-  .jetpack-image-container > figure {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .jetpack-image-container .wp-caption-text {
-    font-style: normal;
-    color: $color-text;
-    margin-bottom: 18px;
-    padding-top: 0;
+    > figure {
+      display: table;
+    }
+    img {
+      display: table-footer-group;
+      margin: 18px auto 0;
+    }
+    .wp-caption-text {
+      display: table-header-group;
+      font-style: normal;
+      color: $color-text;
+      padding-top: 0;
+    }
   }
 }
