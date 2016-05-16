@@ -95,7 +95,7 @@ $widget-link-padding: 8px;
     }
 
     .widget_categories ul:only-child a{
-        order-radius:$widget-link-border-radious;
+        border-radius:$widget-link-border-radious;
     }
 
     //ドロップシャドウの部分、まだ不完全です。
