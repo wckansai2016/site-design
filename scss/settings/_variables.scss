@@ -16,13 +16,17 @@ $color-text: $color-black;
 $color-main: $color-blue-dark;
 $color-accent: $color-red;
 $color-widget-box: $color-grey-light;
+$color-bg-widget-category: #f7f7f7;
 
 //font size
 $footer-font-size : 18px;
 
 //any styles
-$link-border-radious: 5px;
-$link-margin: 15px;
+$widget-title-margin: 20px;
+$widget-font-size: 20px;
+$widget-link-border-radius: 3px;
+$widget-link-margin: 10px;
+$widget-link-padding: 8px;
 
 //breakpoints
 $breakpoints-2to1-min: 56.875em;

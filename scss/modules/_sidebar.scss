@@ -1,9 +1,5 @@
 //Sidebar layout style.
 
-$color-grey: #e8e8e8;
-$color-light-grey: #e8e8e8;
-$color-dark-green: #1d3501;
-$color-bg-widget-category: #f7f7f7;
 $widget-title-margin: 20px;
 $widget-font-size: 20px;
 $widget-link-border-radius: 3px;
@@ -28,8 +24,8 @@ $widget-link-padding: 8px;
         border-width: 1px;
         font-size: $widget-font-size;
         border-color: $color-grey $color-grey $color-green;
-        background: -moz-linear-gradient(top, $color-white 0%, $color-light-grey 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, $color-white 0%,$color-light-grey 100%); /* Chrome10-25,Safari5.1-6 */
+        background: -moz-linear-gradient(top, $color-white 0%, $color-grey-light 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, $color-white 0%,$color-grey-light 100%); /* Chrome10-25,Safari5.1-6 */
         padding:$widget-title-margin;
 
     }
@@ -38,7 +34,7 @@ $widget-link-padding: 8px;
     //Widget Category
     .widget_categories{
         background: $color-bg-widget-category;
-        border:1px solid $color-light-grey;
+        border:1px solid $color-grey-light;
 
     }
 
@@ -74,7 +70,7 @@ $widget-link-padding: 8px;
 
     .widget_categories li a{
         display: block;
-        color:$color-dark-green;
+        color:$color-green-dark;
         padding: 18px 22px;
         margin-left: -$widget-link-padding;
         margin-right: -$widget-link-padding;
