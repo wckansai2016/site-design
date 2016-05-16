@@ -1,0 +1,120 @@
+//Sidebar layout style.
+
+$widget-title-margin: 20px;
+$widget-font-size: 20px;
+$widget-link-border-radius: 3px;
+$widget-link-margin: 10px;
+$widget-link-padding: 8px;
+
+/*Sidebar
+---------------------------------------------------*/
+.sidebar.widget-area {
+  //Widget Common
+  .widget {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    background-color: $color-white;
+  }
+
+  .widget-title {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    font-size: $widget-font-size;
+    border-color: $color-grey $color-grey $color-green;
+    background: -moz-linear-gradient(top, $color-white 0%, $color-grey-light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $color-white 0%, $color-grey-light 100%); /* Chrome10-25,Safari5.1-6 */
+    padding: $widget-title-margin;
+  }
+
+  //Widget Category
+  .widget_categories {
+    background: $color-bg-widget-category;
+    border: 1px solid $color-grey-light;
+  }
+
+  .widget_categories .widget-title {
+    margin-bottom: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .widget_categories ul {
+    margin: $widget-link-margin;
+    padding: 0 $widget-link-padding;
+    background: url(../img/bg_widget_category.png);
+    border-radius: $widget-link-border-radius;
+    background-color: $color-bg-widget-category;
+  }
+
+  .widget_categories li {
+    list-style: none;
+  }
+
+  .widget_categories li:not(:first-child) {
+    border-top: 1px solid #a9ef58;
+  }
+
+  .widget_categories li:not(:last-child) {
+    border-bottom: 1px solid #63aa12;
+  }
+
+  .widget_categories li a {
+    display: block;
+    color: $color-green-dark;
+    padding: 18px 22px;
+    margin-left: -$widget-link-padding;
+    margin-right: -$widget-link-padding;
+  }
+
+  .widget_categories li a:hover {
+    background: url(../img/bg_widget_category_hover.png);
+  }
+
+  .widget ul li:first-child a {
+    border-top-left-radius: $widget-link-border-radius;
+    border-top-right-radius: $widget-link-border-radius;
+  }
+
+  .widget_categories ul li:last-child a {
+    border-bottom-left-radius: $widget-link-border-radius;
+    border-bottom-right-radius: $widget-link-border-radius;
+  }
+
+  .widget_categories ul:only-child a {
+    border-radius: $widget-link-border-radius;
+  }
+
+  //ドロップシャドウの部分、まだ不完全です。
+  /*
+  .widget_categories::after{
+      content:" ";
+      display:block;
+      background:url(../img/bg_widget_category_bottom.png) no-repeat center top;
+      background-size: 100% auto;
+      vertical-align:middle;
+      height: 48px;
+      width: 100%;
+  }
+  */
+
+  //JetPack Widget Image
+  .jetpack-image-container {
+    > figure {
+      display: table;
+    }
+    img {
+      display: table-footer-group;
+      margin: 18px auto 0;
+    }
+    .wp-caption-text {
+      display: table-header-group;
+      font-style: normal;
+      color: $color-text;
+      padding-top: 0;
+    }
+  }
+}
