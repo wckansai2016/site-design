@@ -12,12 +12,12 @@ $widget-link-padding: 8px;
 
 /*Sidebar
 ---------------------------------------------------*/
-.sidebar{
+.sidebar.widget-area{
     //Widget Common
     .widget{
         border-top:none;
         padding-top: 0;
-        padding-bottom: $widget-link-margin;
+        padding-bottom: 0;
         margin-bottom: 40px;
         background-color:$color-white;
     }
@@ -33,7 +33,6 @@ $widget-link-padding: 8px;
         padding:$widget-title-margin;
 
     }
-
 
 
     //Widget Category
