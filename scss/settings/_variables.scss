@@ -33,6 +33,7 @@ $breakpoints-2to1-min: 56.875em;
 $breakpoints-2to1-max: 56.874em;
 $breakpoints-fit-min: 44.375em;
 $breakpoints-fit-max: 44.374em;
+$breakpoints-1200: 1200px;
 
 //media query settings
 @mixin max-screen($break-point) {
