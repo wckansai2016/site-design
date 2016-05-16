@@ -1,101 +1,161 @@
 //Single page layout style.
 .site-header {
   padding: 45% 0 0;
-  margin-bottom: 30px;
   background: url("../img/main_visual_front.png") center top no-repeat;
   background-size: contain;
   position: relative;
-  .site-branding {
-    padding: 0;
-    margin: 0;
+}
+
+.site-branding {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .site-title {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    .site-title {
+    a {
+      display: block;
       width: 100%;
-      height: 100%;
-      a {
-        display: block;
-        width: 100%;
-        height: 0;
-        padding-top: 100%;
-        overflow: hidden;
-        text-indent: 100%;
-      }
-    }
-    .site-description {
-      display: none;
+      height: 0;
+      padding-top: 100%;
+      overflow: hidden;
+      text-indent: 100%;
     }
   }
-  .menu-toggle {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    border: none;
-    background-color: $color-main;
-    color: $color-white;
-    margin: 0 0;
-    &.toggled-on {
+  .site-description {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  border: none;
+  background-color: $color-main;
+  color: $color-white;
+  margin: 0 0;
+  &.toggled-on {
+    background-color: rgba($color-main, 0.8);
+    &:hover,&:focus {
       background-color: rgba($color-main, 0.8);
-      &:hover,&:focus {
-        background-color: rgba($color-main, 0.8);
-      }
     }
   }
-  .site-header-menu {
+}
+
+.site-header-menu {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: url('../img/bg_global_menu.png') center center repeat;
+  margin: 0;
+  text-align: center;
+  .main-navigation {
     position: relative;
-    z-index: 10;
-    width: 100%;
-    background-color: $color-blue-dark;
-    margin: 0;
-    text-align: center;
-    .main-navigation {
-      > div {
-        height: 42px;
-      }
-      .primary-menu {
+    background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
+    background-size: cover;
+    > div {
+      height: 90px;
+    }
+    .primary-menu {
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+      &:before, &:after {
         display: block;
-        margin: 0 auto;
-        text-align: left;
-        @include min-screen($breakpoints-2to1-min) {
-          display: inline-block;
-          border: none;
-        }
-        li {
-          background-color: $color-blue;
-          border-top: 1px solid $color-blue-dark;
-          @include min-screen($breakpoints-2to1-min) {
-            border-top: none;
-            background: transparent;
-          }
-          &.menu-item-has-children {
-            padding-right: 1.25em;
-          }
-          a {
-            padding: 0.65625em 0.875em;
-            color: $color-white;
-          }
-        }
+        content: '';
+        position: absolute;
+        z-index: 10;
       }
-      .sub-menu {
-        background-color: $color-blue;
+      &:before {
+        top: -60px;
+        left: -300px;
+        width: 313px;
+        height: 189px;
+        background: url('../img/gnavi_cloud_left.png') center center no-repeat;
+      }
+      &:after {
+        width: 328px;
+        height: 193px;
+        top: -40px;
+        right: -300px;
+        background: url('../img/gnavi_cloud_right.png') center center no-repeat;
+      }
+      @include min-screen($breakpoints-2to1-min) {
+        display: inline-block;
+        border: none;
+        position: relative;
+      }
+      > li {
+        border-top: 1px solid $color-blue-dark;
+        padding: 0;
         @include min-screen($breakpoints-2to1-min) {
-          border: none;
-          li {
-            border-color: $color-blue-dark;
-            border-top: 1px solid $color-blue-dark;
-          }
-          &:before,
-          &:after {
+          border-top: none;
+          background: transparent;
+          z-index: 20;
+        }
+        &:hover {
+          background: url('../img/bg_global_menu_hover.png') center center repeat;
+        }
+        &:before {
+          display: block;
+          width: 1px;
+          height: 30px;
+          content: '';
+          background-color: $color-white;
+          position: absolute;
+          top: 30px;
+          left: 0;
+        }
+        &:first-child {
+          &:before {
             display: none;
           }
         }
+        > a {
+          height: 100%;
+          line-height: 90px;
+          padding: 0 40px;
+          font-size: 16px;
+          color: $color-white;
+          position: relative;
+          &:after {
+            display: inline-block;
+            width: 100%;
+            position: absolute;
+            top: auto;
+            right: 0;
+            bottom: 10px;
+            text-align: center;
+          }
+        }
       }
-      .dropdown-toggle {
-        color: $color-white;
+    }
+    .sub-menu {
+      @include min-screen($breakpoints-2to1-min) {
+        border: none;
+        li {
+          border-color: transparent;
+          border-bottom: 1px dotted $color-white;
+          background: url('../img/bg_global_menu_hover.png') center center repeat;
+          a {
+            width: 16em;
+            padding: 30px 40px;
+            color: $color-white;
+          }
+        }
+        &:before,
+        &:after {
+          display: none;
+        }
       }
+    }
+    .dropdown-toggle {
+      color: $color-white;
     }
   }
 }
