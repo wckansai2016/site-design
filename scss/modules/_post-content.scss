@@ -1,1 +1,97 @@
 //Post view : WYSIWYG style.
+.site-main {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 25px;
+    border-left: 5px solid $color-green;
+    padding-left: 20px;
+    min-height: 25px;
+  }
+  h3 {
+    font-size: 22px;
+    border-left: 3px solid $color-green;
+    padding-left: 20px;
+    min-height: 25px;
+  }
+  .entry-title {
+    padding: 0 100px 15px 0;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 8px solid $color-green;
+    position: relative;
+    overflow: inherit;
+  }
+  .entry-title::after {
+    position: absolute;
+    background: url('../img/wapuuA.png') no-repeat;
+    top: 0;
+    right: 0;
+    content: ' ';
+    width: 116px;
+    height: 140px;
+  }
+
+  .post-navigation {
+    border: none;
+  }
+  table {
+    border-collapse: collapse;
+    th,
+    td {
+      border: 1px solid $color-green;
+    }
+    th {
+      background: rgba($color-green,0.3);
+    }
+  }
+  ul {
+    list-style-type: square;
+  }
+  .sharedaddy:before,
+  .sharedaddy:last-child:after {
+    background-color: $color-green;
+  }
+  .sharedaddy {
+    border-top: 1px solid $color-green;
+    border-bottom: 1px solid $color-green;
+    padding: 15px 0;
+    .sd-sharing {
+      h3.sd-title {
+        border: none;
+        padding: 0;
+        color: $color-green;
+      }
+    }
+  }
+  .page-links a {
+    background: $color-green;
+    border-color: $color-green;
+    border-radius: 0;
+  }
+  @include min-screen($breakpoints-fit-max) {
+  }
+  @include max-screen($breakpoints-fit-min) {
+    padding: 15px;
+    .post-thumbnail {
+      margin: 0 0 1.75em 0;
+    }
+    .entry-header,
+    .entry-summary,
+    .entry-content,
+    .entry-footer,
+    .page-content {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .entry-title::after {
+      background-size: 80px 96px;
+      top: 0;
+      right: 0;
+      content: ' ';
+      width: 80px;
+      height: 96px;
+    }
+  }
+}
