@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.site-header-main {
+  background: url('../img/bg_global_menu.png') center center repeat;
+  @include min-screen($breakpoints-2to1-min) {
+    background: none;
+  }
+}
+
 .site-branding {
   padding: 0;
   margin: 0;
@@ -21,7 +28,7 @@
       display: block;
       width: 100%;
       height: 0;
-      padding-top: 100%;
+      padding-top: 45%;
       overflow: hidden;
       text-indent: 100%;
     }
@@ -36,14 +43,15 @@
   z-index: 10;
   width: 100%;
   border: none;
-  background-color: $color-main;
-  color: $color-white;
-  margin: 0 0;
+  background-color: transparent;
+  margin: 15px 7.6923%;
+  @include btn-style( $color-white, $color-grey, 60px, 3px );
+  color: $color-blue-dark;
+  font-size: 16px;
+  &:hover,
+  &:focus,
   &.toggled-on {
-    background-color: rgba($color-main, 0.8);
-    &:hover,&:focus {
-      background-color: rgba($color-main, 0.8);
-    }
+    @include btn-style( $color-white, $color-grey, 60px, 3px );
   }
 }
 
@@ -51,39 +59,50 @@
   position: relative;
   z-index: 10;
   width: 100%;
-  background: url('../img/bg_global_menu.png') center center repeat;
   margin: 0;
   text-align: center;
-  .main-navigation {
+  @include min-screen($breakpoints-2to1-min) {
+    background: url('../img/bg_global_menu.png') center center repeat;
+  }
+}
+.site-header-menu,
+.site-footer {
+ .main-navigation {
     position: relative;
-    background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
     background-size: cover;
-    > div {
-      height: 90px;
+    margin: 0;
+    background: url('../img/bg_global_menu.png') center center repeat;
+    @include min-screen($breakpoints-2to1-min) {
+      background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
+      > div {
+        height: 90px;
+      }
     }
     .primary-menu {
       display: block;
       margin: 0 auto;
       text-align: left;
-      &:before, &:after {
-        display: block;
-        content: '';
-        position: absolute;
-        z-index: 10;
-      }
-      &:before {
-        top: -60px;
-        left: -300px;
-        width: 313px;
-        height: 189px;
-        background: url('../img/gnavi_cloud_left.png') center center no-repeat;
-      }
-      &:after {
-        width: 328px;
-        height: 193px;
-        top: -40px;
-        right: -300px;
-        background: url('../img/gnavi_cloud_right.png') center center no-repeat;
+      @include min-screen($breakpoints-2to1-min) {
+        &:before, &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          z-index: 10;
+        }
+        &:before {
+          top: -60px;
+          left: -300px;
+          width: 313px;
+          height: 189px;
+          background: url('../img/gnavi_cloud_left.png') center center no-repeat;
+        }
+        &:after {
+          width: 328px;
+          height: 193px;
+          top: -40px;
+          right: -300px;
+          background: url('../img/gnavi_cloud_right.png') center center no-repeat;
+        }
       }
       @include min-screen($breakpoints-2to1-min) {
         display: inline-block;
@@ -91,38 +110,39 @@
         position: relative;
       }
       > li {
-        border-top: 1px solid $color-blue-dark;
+        border-top: 1px solid rgba($color-white, 0.5);
         padding: 0;
-        @include min-screen($breakpoints-2to1-min) {
-          border-top: none;
-          background: transparent;
-          z-index: 20;
-        }
         &:hover {
           background: url('../img/bg_global_menu_hover.png') center center repeat;
-        }
-        &:before {
-          display: block;
-          width: 1px;
-          height: 30px;
-          content: '';
-          background-color: $color-white;
-          position: absolute;
-          top: 30px;
-          left: 0;
         }
         &:first-child {
           &:before {
             display: none;
           }
         }
+        @include min-screen($breakpoints-2to1-min) {
+          border-top: none;
+          &:before {
+            display: block;
+            width: 1px;
+            height: 30px;
+            content: '';
+            background-color: $color-white;
+            position: absolute;
+            top: 30px;
+            left: 0;
+          }
+        }
         > a {
           height: 100%;
-          line-height: 90px;
-          padding: 0 40px;
+          padding: 30px 7.6923%;
           font-size: 16px;
           color: $color-white;
           position: relative;
+          @include min-screen($breakpoints-2to1-min) {
+            line-height: 90px;
+            padding: 0 40px;
+          }
           &:after {
             display: inline-block;
             width: 100%;
@@ -136,6 +156,15 @@
       }
     }
     .sub-menu {
+      margin-left: 7.6923%;
+      background: url('../img/bg_global_menu_hover.png') center center repeat;
+      li {
+        border-top: 1px solid rgba($color-white, 0.3);
+        a {
+          color: $color-white;
+          padding: 15px 0;
+        }
+      }
       @include min-screen($breakpoints-2to1-min) {
         border: none;
         li {
@@ -145,7 +174,6 @@
           a {
             width: 16em;
             padding: 30px 40px;
-            color: $color-white;
           }
         }
         &:before,
@@ -156,6 +184,12 @@
     }
     .dropdown-toggle {
       color: $color-white;
+      right: 7.6923%;
+      top: 15px;
+      &:after {
+        border: none;
+        width: auto;
+      }
     }
   }
 }
