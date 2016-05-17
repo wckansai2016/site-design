@@ -1,6 +1,12 @@
 //Front page layout style.
 
 .home {
+  .site-header {
+    padding: 45% 0 0;
+    background: url("../img/main_visual_front.png") center top no-repeat;
+    background-size: contain;
+    position: relative;
+  }
   .site-main {
     > article {
       background: none;
@@ -105,7 +111,7 @@
     @include max-screen($breakpoints-fit-min) {
     }
     .front-post-wrap {
-      background: $color-white;
+      background: rgba($color-white,0.75);
       padding: 30px;
     }
   }
