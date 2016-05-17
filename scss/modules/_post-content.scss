@@ -86,27 +86,6 @@
     min-height: 110px;
     padding-left: 115px;
   }
-  .sharedaddy:before,
-  .sharedaddy:last-child:after {
-    background-color: $color-green;
-  }
-  .sharedaddy {
-    border-top: 1px solid $color-green;
-    border-bottom: 1px solid $color-green;
-    padding: 15px 0;
-    .sd-sharing {
-      h3.sd-title {
-        border: none;
-        padding: 0;
-        color: $color-green;
-      }
-    }
-  }
-  .page-links a {
-    background: $color-green;
-    border-color: $color-green;
-    border-radius: 0;
-  }
   @include max-screen($breakpoints-fit-min) {
     padding: 15px;
     .entry-header,
