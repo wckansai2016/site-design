@@ -13,7 +13,7 @@
     padding: 30px;
   }
   @include min-screen($breakpoints-2to1-min) {
-    min-width: 840px;
+    min-width: 100%;
     > article {
       padding: 30px;
     }
@@ -24,14 +24,30 @@
   @include max-screen($breakpoints-2to1-max) {
     width: 100%;
   }
+  .pagination {
+    border-top: 4px solid $color-green;
+    .prev {
+      background-color: $color-green;
+    }
+    .next {
+      background-color: $color-green;
+    }
+    a.page-numbers {
+      color: $color-white;
+      background-color: $color-green;
+    }
+  }
+  .pagination:after {
+    background-color: $color-green;
+   }
 }
 .sidebar {
-  @include min-screen($breakpoints-2to1-min) {
-    min-width: 300px;
+   @include min-screen($breakpoints-2to1-min) {
+    max-width: 300px;
     margin-right: 900px;
   }
   @include max-screen($breakpoints-2to1-max) {
-    width: 100%;
+      width: 100%;
+    }
   }
-}
 }
