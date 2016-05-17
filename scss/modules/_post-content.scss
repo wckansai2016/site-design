@@ -15,6 +15,24 @@
     padding-left: 20px;
     min-height: 25px;
   }
+  .entry-title {
+    padding: 0 100px 15px 0;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 8px solid $color-green;
+    position: relative;
+    overflow: inherit;
+  }
+  .entry-title::after {
+    position: absolute;
+    background: url('../img/wapuuA.png') no-repeat;
+    top: 0;
+    right: 0;
+    content: ' ';
+    width: 116px;
+    height: 140px;
+  }
+
   .post-navigation {
     border: none;
   }
@@ -53,27 +71,11 @@
     border-radius: 0;
   }
   @include min-screen($breakpoints-fit-max) {
-    .entry-title {
-      padding: 0 100px 15px 0;
-      margin-bottom: 0;
-      border-bottom: 8px solid $color-green;
-      position: relative;
-      overflow: inherit;
-    }
-    .entry-title::after {
-      position: absolute;
-      background: url('../img/wapuuA.png') no-repeat;
-      top: 0;
-      right: 0;
-      content: ' ';
-      width: 116px;
-      height: 140px;
-    }
   }
   @include max-screen($breakpoints-fit-min) {
     padding: 15px;
     .post-thumbnail {
-      margin: 0 0 1.75em 7.6923%;
+      margin: 0 0 1.75em 0;
     }
     .entry-header,
     .entry-summary,
@@ -82,6 +84,14 @@
     .page-content {
       margin-right: 0;
       margin-left: 0;
+    }
+    .entry-title::after {
+      background-size: 80px 96px;
+      top: 0;
+      right: 0;
+      content: ' ';
+      width: 80px;
+      height: 96px;
     }
   }
 }
