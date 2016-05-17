@@ -1,7 +1,24 @@
 //Common page layout style.
+.site-content {
+  background: url('../img/front-contents-img-bg.png') no-repeat top center;
+  @include min-screen($breakpoints-2to1-min) {
+    padding: 30px 4.5455% 0;
+  }
+  @include screen($breakpoints-fit-min, $breakpoints-2to1-max) {
+    padding: 30px 4.5455% 0;
+  }
+
 .site-main {
+  > article {
+    background: $color-white;
+    padding: 30px;
+  }
   @include min-screen($breakpoints-2to1-min) {
     width: 840px;
+    > article {
+      padding: 30px;
+    }
+
   }
   @include max-screen($breakpoints-2to1-max) {
     width: 100%;
@@ -15,4 +32,5 @@
   @include max-screen($breakpoints-2to1-max) {
     width: 100%;
   }
+}
 }
