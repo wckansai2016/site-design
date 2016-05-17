@@ -64,9 +64,14 @@
   @include min-screen($breakpoints-2to1-min) {
     background: url('../img/bg_global_menu.png') center center repeat;
   }
-  .main-navigation {
+}
+.site-header-menu,
+.site-footer {
+ .main-navigation {
     position: relative;
     background-size: cover;
+    margin: 0;
+    background: url('../img/bg_global_menu.png') center center repeat;
     @include min-screen($breakpoints-2to1-min) {
       background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
       > div {
@@ -105,7 +110,7 @@
         position: relative;
       }
       > li {
-        border-top: 1px solid $color-blue-dark;
+        border-top: 1px solid rgba($color-white, 0.5);
         padding: 0;
         &:hover {
           background: url('../img/bg_global_menu_hover.png') center center repeat;
@@ -116,6 +121,7 @@
           }
         }
         @include min-screen($breakpoints-2to1-min) {
+          border-top: none;
           &:before {
             display: block;
             width: 1px;
@@ -129,11 +135,14 @@
         }
         > a {
           height: 100%;
-          line-height: 90px;
-          padding: 0 40px;
+          padding: 30px 7.6923%;
           font-size: 16px;
           color: $color-white;
           position: relative;
+          @include min-screen($breakpoints-2to1-min) {
+            line-height: 90px;
+            padding: 0 40px;
+          }
           &:after {
             display: inline-block;
             width: 100%;
@@ -147,6 +156,15 @@
       }
     }
     .sub-menu {
+      margin-left: 7.6923%;
+      background: url('../img/bg_global_menu_hover.png') center center repeat;
+      li {
+        border-top: 1px solid rgba($color-white, 0.3);
+        a {
+          color: $color-white;
+          padding: 15px 0;
+        }
+      }
       @include min-screen($breakpoints-2to1-min) {
         border: none;
         li {
@@ -156,7 +174,6 @@
           a {
             width: 16em;
             padding: 30px 40px;
-            color: $color-white;
           }
         }
         &:before,
@@ -167,6 +184,12 @@
     }
     .dropdown-toggle {
       color: $color-white;
+      right: 7.6923%;
+      top: 15px;
+      &:after {
+        border: none;
+        width: auto;
+      }
     }
   }
 }
