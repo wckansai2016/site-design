@@ -15,27 +15,6 @@
     padding-left: 20px;
     min-height: 25px;
   }
-  .entry-title {
-    padding: 0 100px 15px 0;
-    margin-bottom: 0;
-    border: none;
-    border-bottom: 8px solid $color-green;
-    position: relative;
-    overflow: inherit;
-  }
-  .entry-title::after {
-    position: absolute;
-    background: url('../img/wapuuA.png') no-repeat;
-    top: 0;
-    right: 0;
-    content: ' ';
-    width: 116px;
-    height: 140px;
-  }
-
-  .post-navigation {
-    border: none;
-  }
   table {
     border-collapse: collapse;
     th,
@@ -48,6 +27,64 @@
   }
   ul {
     list-style-type: square;
+  }
+  @include max-screen($breakpoints-2to1-max) {
+    .entry-header,
+    .post-thumbnail,
+    .entry-content,
+    .entry-summary,
+    .entry-footer,
+    .comments-area,
+    .image-navigation,
+    .post-navigation,
+    .page-header,
+    .page-content,
+    .content-bottom-widgets,
+    .pagination {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .entry-title {
+    padding: 0 100px 15px 0;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 8px solid $color-green;
+    position: relative;
+    overflow: inherit;
+    ::after {
+      position: absolute;
+      background: url('../img/wapuuA.png') no-repeat;
+      top: 0;
+      right: 0;
+      content: ' ';
+      width: 116px;
+      height: 140px;
+    }
+  }
+  .entry-content {
+     :first-child {
+       padding-right: 140px;
+     }
+   }
+  .has-post-thumbnail {
+   .entry-content {
+     :first-child {
+       padding-right: 0;
+    }
+   }
+  }
+  .post-navigation {
+    border: none;
+  }
+  a.post-thumbnail:hover,
+  a.post-thumbnail:focus {
+    opacity: 1;
+  }
+  .entry-footer {
+    background: url('../img/wapuuB.png') no-repeat top 20px left 0;
+    min-height: 110px;
+    padding-left: 115px;
   }
   .sharedaddy:before,
   .sharedaddy:last-child:after {
@@ -70,13 +107,8 @@
     border-color: $color-green;
     border-radius: 0;
   }
-  @include min-screen($breakpoints-fit-max) {
-  }
   @include max-screen($breakpoints-fit-min) {
     padding: 15px;
-    .post-thumbnail {
-      margin: 0 0 1.75em 0;
-    }
     .entry-header,
     .entry-summary,
     .entry-content,
@@ -92,6 +124,9 @@
       content: ' ';
       width: 80px;
       height: 96px;
+    }
+    .post-thumbnail {
+      margin: 0 0 1.75em 0;
     }
   }
 }
