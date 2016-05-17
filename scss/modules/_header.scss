@@ -43,14 +43,14 @@
   z-index: 10;
   width: 100%;
   border: none;
-  background-color: $color-main;
-  color: $color-white;
-  margin: 0 0;
+  background-color: transparent;
+  margin: 15px 7.6923%;
+  @include btn-style( $color-white, $color-grey );
+  color: $color-blue-dark;
+  &:hover,
+  &:focus,
   &.toggled-on {
-    background-color: rgba($color-main, 0.8);
-    &:hover,&:focus {
-      background-color: rgba($color-main, 0.8);
-    }
+    @include btn-style( $color-white, $color-grey );
   }
 }
 
