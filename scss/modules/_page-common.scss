@@ -7,18 +7,19 @@
   @include screen($breakpoints-fit-min, $breakpoints-2to1-max) {
     padding: 30px 4.5455% 0;
   }
-
 .site-main {
   > article {
-    background: $color-white;
+    background: rgba($color-white,0.75);
     padding: 30px;
   }
   @include min-screen($breakpoints-2to1-min) {
-    width: 840px;
+    min-width: 840px;
     > article {
       padding: 30px;
     }
-
+  }
+  @include screen($breakpoints-fit-min, $breakpoints-2to1-max) {
+    width: 910px;
   }
   @include max-screen($breakpoints-2to1-max) {
     width: 100%;
@@ -26,7 +27,7 @@
 }
 .sidebar {
   @include min-screen($breakpoints-2to1-min) {
-    width: 300px;
+    min-width: 300px;
     margin-right: 900px;
   }
   @include max-screen($breakpoints-2to1-max) {
