@@ -1,1 +1,18 @@
 //Single page layout style.
+.comments-title,
+.comment-reply-title {
+    border-top: none;
+    padding-top: 0;
+  }
+  body:not(.search-results) {
+    article:not(.type-page) {
+      .entry-footer{
+        .avatar {
+            display: block;
+            height: auto;
+            margin: 20px 0 8px;
+            width: 100px;
+        }
+      }
+    }
+  }
