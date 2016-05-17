@@ -45,12 +45,13 @@
   border: none;
   background-color: transparent;
   margin: 15px 7.6923%;
-  @include btn-style( $color-white, $color-grey );
+  @include btn-style( $color-white, $color-grey, 60px, 3px );
   color: $color-blue-dark;
+  font-size: 16px;
   &:hover,
   &:focus,
   &.toggled-on {
-    @include btn-style( $color-white, $color-grey );
+    @include btn-style( $color-white, $color-grey, 60px, 3px );
   }
 }
 
@@ -106,27 +107,24 @@
       > li {
         border-top: 1px solid $color-blue-dark;
         padding: 0;
-        @include min-screen($breakpoints-2to1-min) {
-          border-top: none;
-          background: transparent;
-          z-index: 20;
-        }
         &:hover {
           background: url('../img/bg_global_menu_hover.png') center center repeat;
-        }
-        &:before {
-          display: block;
-          width: 1px;
-          height: 30px;
-          content: '';
-          background-color: $color-white;
-          position: absolute;
-          top: 30px;
-          left: 0;
         }
         &:first-child {
           &:before {
             display: none;
+          }
+        }
+        @include min-screen($breakpoints-2to1-min) {
+          &:before {
+            display: block;
+            width: 1px;
+            height: 30px;
+            content: '';
+            background-color: $color-white;
+            position: absolute;
+            top: 30px;
+            left: 0;
           }
         }
         > a {

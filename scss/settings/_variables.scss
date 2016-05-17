@@ -54,11 +54,13 @@ $breakpoints-1200: 1200px;
   }
 }
 
-@mixin btn-style( $btn-light, $btn-dark ) {
+@mixin btn-style( $btn-light, $btn-dark, $btn-height, $btn-radius) {
   background: -moz-linear-gradient(top, $btn-light 0%, $btn-light 50%, $btn-dark 50%, $btn-dark);
   background: -webkit-gradient(linear, left top, left bottom,from($btn-light), color-stop(0.5,$btn-light), color-stop(0.5,$btn-dark),  to($btn-dark));
   color: $color-blue-dark;
-  border-radius: 3px;
+  height: $btn-height;
+  //line-height: $btn-height;
+  border-radius: $btn-radius;
   &:hover {
     color: $color-blue-dark;
   }
