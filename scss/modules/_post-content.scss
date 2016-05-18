@@ -55,7 +55,7 @@
     ::after {
       position: absolute;
       background: url('../img/wapuuA.png') no-repeat;
-      top: 0;
+      bottom: -70px;
       right: 0;
       content: ' ';
       width: 116px;
@@ -83,7 +83,8 @@
   }
   .entry-footer {
     background: url('../img/wapuuB.png') no-repeat top 20px left 0;
-    min-height: 110px;
+    background-size: 80px auto;
+    min-height: 80px;
     padding-left: 115px;
   }
   @include max-screen($breakpoints-fit-min) {
