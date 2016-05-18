@@ -19,7 +19,7 @@ $color-widget-box: $color-grey-light;
 $color-bg-widget-category: #f7f7f7;
 
 //font size
-$footer-font-size : 18px;
+$footer-font-size: 18px;
 
 //any styles
 $widget-title-margin: 20px;
@@ -56,7 +56,7 @@ $breakpoints-1200: 1200px;
 
 @mixin btn-style( $btn-light, $btn-dark, $btn-height, $btn-radius) {
   background: -moz-linear-gradient(top, $btn-light 0%, $btn-light 50%, $btn-dark 50%, $btn-dark);
-  background: -webkit-gradient(linear, left top, left bottom,from($btn-light), color-stop(0.5,$btn-light), color-stop(0.5,$btn-dark),  to($btn-dark));
+  background: -webkit-gradient(linear, left top, left bottom, from($btn-light), color-stop(0.5, $btn-light), color-stop(0.5, $btn-dark), to($btn-dark));
   color: $color-blue-dark;
   height: $btn-height;
   //line-height: $btn-height;

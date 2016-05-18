@@ -1,38 +1,41 @@
 //Single page layout style.
 .comments-title,
 .comment-reply-title {
-    border-top: none;
-    padding-top: 0;
-  }
+  border-top: none;
+  padding-top: 0;
+}
+
 .entry-content {
   width: 100%;
   margin: 0;
   padding: 30px 0;
 }
-.entry-footer{
+
+.entry-footer {
   width: 100%;
   margin: 0;
   padding: 20px 0 20px 120px;
   display: flex;
   span {
-    display: table-cell ;
+    display: table-cell;
     text-align: center;
     vertical-align: middle;
   }
   .avatar {
-      display: block;
-      height: auto;
-      margin: 20px 0 8px;
-      width: 100px;
+    display: block;
+    height: auto;
+    margin: 20px 0 8px;
+    width: 100px;
   }
 }
+
 body:not(.search-results) {
   article:not(.type-page) {
     .entry-content {
       width: 100%;
       border-bottom: 1px solid $color-green;
     }
-    .entry-footer{
+    .entry-footer {
       width: 100%;
       border-bottom: 1px solid $color-green;
     }
