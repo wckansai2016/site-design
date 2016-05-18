@@ -19,11 +19,23 @@
 		margin: 0;
 		padding: 20px 0 20px 100px;
 		display: flex;
-		span {
+		& > span {
 			display: table-cell;
 			text-align: center;
 			vertical-align: middle;
+      padding-top: 60px;
 		}
+    span.author,
+    span.byline {
+      padding: 0;
+    }
+
+    @include min-screen($breakpoints-2to1-min) {
+      & > span {
+        padding-top: 100px;
+        margin-right: 20px;
+      }
+    }
 		.avatar {
 			width: 60px;
 			height: auto;

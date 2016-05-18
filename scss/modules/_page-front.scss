@@ -65,22 +65,22 @@
             display: block;
           }
         }
-      }
-      li:nth-child(2n) {
-        margin-right: 0;
-      }
-      li::after {
-        font-size: 10px;
-        color: $color-white;
-        content: "▶";
-        width: 10px;
-        height: 17px;
-        position: absolute;
-        top: 41px;
-        right: 10px;
-      }
-      li:hover {
-        background: rgba($color-blue-dark, 0.3);
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &::after {
+          font-size: 10px;
+          color: $color-white;
+          content: "▶";
+          width: 10px;
+          height: 17px;
+          position: absolute;
+          top: 41px;
+          right: 10px;
+        }
+        &:hover {
+          background: rgba($color-blue-dark, 0.3);
+        }
       }
     }
     @include min-screen($breakpoints-2to1-max) {
