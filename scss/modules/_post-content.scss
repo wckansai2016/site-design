@@ -22,7 +22,7 @@
       border: 1px solid $color-green;
     }
     th {
-      background: rgba($color-green,0.3);
+      background: rgba($color-green, 0.3);
     }
   }
   ul {
@@ -63,16 +63,16 @@
     }
   }
   .entry-content {
-     > :first-child {
-       padding-right: 140px;
-     }
-   }
-  .has-post-thumbnail {
-   .entry-content {
-     > :first-child {
-       padding-right: 0;
+    > :first-child {
+      padding-right: 140px;
     }
-   }
+  }
+  .has-post-thumbnail {
+    .entry-content {
+      > :first-child {
+        padding-right: 0;
+      }
+    }
   }
   .post-navigation {
     border: none;
