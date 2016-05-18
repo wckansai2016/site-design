@@ -22,10 +22,21 @@
           padding: 0;
           position: relative;
           z-index: 10;
+          &:after {
+            display: none;
+          }
           .url {
             position: absolute;
-            top: -60px;
+            top: -55px;
             left: 90px;
+            line-height: 13px;
+            &:before {
+              font-family: "Genericons";
+              content: "\f411";
+              vertical-align: middle;
+              font-size: 16px;
+              margin-right: 2px;
+            }
           }
 
         }
@@ -42,7 +53,20 @@
       .posted-on,
       .edit-link {
         display: inline-block;
-        margin: 35px 20px 0 0;
+        line-height: 13px;
+        margin: 40px 20px 0 0;
+        &:after {
+          display: none;
+        }
+      }
+      .posted-on {
+        &:before {
+          font-family: "Genericons";
+          content: "\f303";
+          vertical-align: middle;
+          font-size: 16px;
+          margin-right: 2px;
+        }
       }
 	}
 }
