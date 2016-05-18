@@ -7,7 +7,12 @@
     background-size: contain;
     position: relative;
   }
-  .site-main {
+    .site .site-content .content-area {
+      .entry-content {
+        padding-top: 0;
+     }
+    }
+    .site-main {
     > article {
       background: none;
       padding: 0;
