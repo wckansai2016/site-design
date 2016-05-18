@@ -4,15 +4,37 @@
     border-top: none;
     padding-top: 0;
   }
-  body:not(.search-results) {
-    article:not(.type-page) {
-      .entry-footer{
-        .avatar {
-            display: block;
-            height: auto;
-            margin: 20px 0 8px;
-            width: 100px;
-        }
-      }
+.entry-content {
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+}
+.entry-footer{
+  width: 100%;
+  margin: 0;
+  padding: 20px 0 20px 120px;
+  display: flex;
+  span {
+    display: table-cell ;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .avatar {
+      display: block;
+      height: auto;
+      margin: 20px 0 8px;
+      width: 100px;
+  }
+}
+body:not(.search-results) {
+  article:not(.type-page) {
+    .entry-content {
+      width: 100%;
+      border-bottom: 1px solid $color-green;
+    }
+    .entry-footer{
+      width: 100%;
+      border-bottom: 1px solid $color-green;
     }
   }
+}
