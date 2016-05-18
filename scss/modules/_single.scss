@@ -5,13 +5,15 @@
   padding-top: 0;
 }
 
-.entry-content {
-  width: 100%;
-  margin: 0;
-  padding: 30px 0;
-}
-
 .site .site-content .content-area {
+	.entry-content {
+		width: 100%;
+		margin: 0;
+		padding: 30px 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.entry-footer {
 		width: 100%;
 		margin: 0;
