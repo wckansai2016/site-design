@@ -17,33 +17,33 @@
 		margin: 0;
 		padding: 20px 0 20px 100px;
 		display: flex;
-		& > span {
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-      padding-top: 60px;
-		}
-    span.author,
-    span.byline {
-      padding: 0;
-    }
+        .author,
+        .byline {
+          padding: 0;
+          position: relative;
+          z-index: 10;
+          .url {
+            position: absolute;
+            top: -60px;
+            left: 90px;
+          }
 
-    @include min-screen($breakpoints-2to1-min) {
-      & > span {
-        margin-right: 20px;
-      }
-    }
+        }
 		.avatar {
-			width: 60px;
+			width: 70px;
 			height: auto;
 			display: block;
-			margin: 0 10px 0 0;
-
+			margin: 0 20px 0 0;
 			img {
 				margin: 0 auto;
 			}
 
 		}
+      .posted-on,
+      .edit-link {
+        display: inline-block;
+        margin: 35px 20px 0 0;
+      }
 	}
 }
 
