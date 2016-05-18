@@ -7,7 +7,7 @@
     color: #000;
     &:after {
       display: block;
-      content: '';
+      //content: '';
       max-width: 32%;
       height: 0;
       flex-basis: 32%;
@@ -81,7 +81,7 @@
       margin-bottom: 10px;
       &:before {
         width: 100%;
-        content: "\f476";
+        //content: "\f476";
         font-family: "Genericons";
         display: block;
         text-align: center;
@@ -106,7 +106,7 @@
       font-size: 0.9rem;
       li {
         &:before {
-          content: "\f429";
+          //content: "\f429";
           padding-right: 5px;
           font-family: "Genericons";
         }
