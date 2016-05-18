@@ -5,9 +5,5 @@
 gulpfile.js
 package.json
 node_modules/
-css/
 *.css
 functions.php
-*.css
-!wck2016_main.css
-!wck2016_teaser.css
