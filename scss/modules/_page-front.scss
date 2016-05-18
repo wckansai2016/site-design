@@ -1,11 +1,122 @@
 //Front page layout style.
 
 .home {
-  //.site-header {
-  //  padding: 45% 0 0;
-  //  background: url("../img/main_visual_front.png") top center no-repeat;
-  //  background-size: cover;
-  //  position: relative;
-  //}
+  .site-header {
+    padding: 45% 0 0;
+    background: url("../img/main_visual_front.png") center top no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+    .site .site-content .content-area {
+     .entry-content {
+       padding: 0;
+     }
+    }
+    .site-main {
+    > article {
+      background: none;
+      padding: 0;
+    }
+    .entry-header {
+      display: none;
+    }
+    .post-thumbnail {
+      display: none;
+    }
+    .front-news {
+      padding: 30px;
+      background: rgba($color-white, 0.75);
+      border: 1px solid $color-blue-dark;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 20px;
+        border: none;
+        padding: 0;
+      }
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+    .entry-content {
+      a {
+        box-shadow: none;
+      }
+    }
+    .front-menu {
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      li {
+        display: -webkit-flex;
+        display: flex;
+        text-align: center;
+        background: rgba($color-blue-dark, 0.75);
+        position: relative;
+        width: 1;
+        width: 48%;
+        height: auto;
+        margin: 0 4% 20px 0;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: $color-white;
+          text-decoration: none;
+          padding: 30px 25px;
+          span {
+            line-height: 1;
+            display: block;
+          }
+        }
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &::after {
+          font-size: 10px;
+          color: $color-white;
+          content: "▶";
+          width: 10px;
+          height: 17px;
+          position: absolute;
+          top: 41px;
+          right: 10px;
+        }
+        &:hover {
+          background: rgba($color-blue-dark, 0.3);
+        }
+      }
+    }
+    @include min-screen($breakpoints-1200) {
+      .front-menu {
+        margin: 0 0 60px;
+        > li {
+          width: 23%;
+          height: auto;
+          margin-right: 2.6666%;
+          a {
+            padding: 35px 25px;
+          }
+        }
+        li:nth-child(2n) {
+          margin-right: 2.6666%;
+        }
+        li::after {
+          top: 50px;
+          right: 10px;
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .front-post-wrap {
+      background: rgba($color-white, 0.75);
+      padding: 30px;
+    }
+  }
+  .sharedaddy {
+    margin: 0 30px;
+  }
 }
-

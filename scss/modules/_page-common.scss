@@ -1,1 +1,82 @@
 //Common page layout style.
+.site-content {
+  background: url('../img/front-contents-img-bg.png') no-repeat top center;
+  @include min-screen($breakpoints-2to1-min) {
+    padding: 30px 4.5455% 0;
+  }
+  @include screen($breakpoints-fit-min, $breakpoints-2to1-max) {
+    padding: 30px 4.5455% 0;
+  }
+  .site-main {
+    > article {
+      background: rgba($color-white, 0.75);
+      padding: 30px;
+    }
+    @include min-screen($breakpoints-2to1-min) {
+      min-width: 100%;
+      > article {
+        padding: 30px;
+      }
+    }
+    @include screen($breakpoints-fit-min, $breakpoints-2to1-max) {
+      width: 910px;
+    }
+    @include max-screen($breakpoints-2to1-max) {
+      width: 100%;
+    }
+    .pagination {
+      border-top: 4px solid $color-green;
+      .prev {
+        background-color: $color-green;
+      }
+      .next {
+        background-color: $color-green;
+      }
+      a.page-numbers {
+        color: $color-white;
+        background-color: $color-green;
+      }
+    }
+    .pagination:before,
+    .pagination:after {
+      background-color: $color-green;
+    }
+  }
+  .sidebar {
+    @include min-screen($breakpoints-2to1-min) {
+      max-width: 300px;
+      margin-right: 900px;
+    }
+    @include max-screen($breakpoints-2to1-max) {
+      width: 100%;
+    }
+  }
+  .sharedaddy:before,
+  .sharedaddy:last-child:after {
+    background-color: $color-green;
+  }
+  .sharedaddy {
+    border-top: 1px solid $color-green;
+    padding: 15px 0;
+    &:last-child:after {
+      display: none;
+    }
+    .sd-sharing {
+      h3.sd-title {
+        border: none;
+        padding: 0;
+        color: $color-green;
+      }
+    }
+  }
+  .page-links a {
+    background: $color-green;
+    border-color: $color-green;
+    border-radius: 0;
+  }
+}
+.page .site .site-content .content-area {
+ .entry-footer {
+   display: none;
+ }
+}
