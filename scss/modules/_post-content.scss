@@ -52,7 +52,7 @@
     border-bottom: 8px solid $color-green;
     position: relative;
     overflow: inherit;
-    ::after {
+    &::after {
       position: absolute;
       background: url('../img/wapuuA.png') no-repeat;
       bottom: -70px;
