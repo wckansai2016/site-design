@@ -63,13 +63,13 @@
     }
   }
   .entry-content {
-     :first-child {
+     > :first-child {
        padding-right: 140px;
      }
    }
   .has-post-thumbnail {
    .entry-content {
-     :first-child {
+     > :first-child {
        padding-right: 0;
     }
    }
