@@ -29,7 +29,6 @@
     list-style-type: square;
   }
   @include max-screen($breakpoints-2to1-max) {
-    .entry-header,
     .post-thumbnail,
     .entry-content,
     .entry-summary,
@@ -43,6 +42,10 @@
     .pagination {
       margin-left: 20px;
       margin-right: 20px;
+    }
+    .entry-header {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   .entry-title {

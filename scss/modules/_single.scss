@@ -30,7 +30,6 @@
 
     @include min-screen($breakpoints-2to1-min) {
       & > span {
-        padding-top: 100px;
         margin-right: 20px;
       }
     }
@@ -44,9 +43,6 @@
 				margin: 0 auto;
 			}
 
-			@include min-screen($breakpoints-2to1-min) {
-				width: 100px;
-			}
 		}
 	}
 }

@@ -58,6 +58,9 @@
   .sharedaddy {
     border-top: 1px solid $color-green;
     padding: 15px 0;
+    &:last-child:after {
+      display: none;
+    }
     .sd-sharing {
       h3.sd-title {
         border: none;
@@ -71,4 +74,9 @@
     border-color: $color-green;
     border-radius: 0;
   }
+}
+.page .site .site-content .content-area {
+ .entry-footer {
+   display: none;
+ }
 }
