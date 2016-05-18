@@ -1,6 +1,6 @@
 //Common page layout style.
 .site-content {
-  background: url('../img/front-contents-img-bg.png') no-repeat top center;
+  background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/front-contents-img-bg.png') no-repeat top center;
   @include min-screen($breakpoints-2to1-min) {
     padding: 30px 4.5455% 0;
   }

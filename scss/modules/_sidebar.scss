@@ -43,7 +43,7 @@ $widget-link-padding: 8px;
     &:after{
       content:" ";
       display:block;
-      background:url(../img/bg_widget_category_bottom.png) no-repeat center top;
+      background:url(https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_widget_category_bottom.png) no-repeat center top;
       background-size: 100% auto;
       vertical-align:middle;
       height: 48px;
@@ -59,7 +59,7 @@ $widget-link-padding: 8px;
     ul {
       margin: $widget-link-margin;
       padding: 0 $widget-link-padding;
-      background: url(../img/bg_widget_category.png);
+      background: url(https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_widget_category.png);
       border-radius: $widget-link-border-radius;
       background-color: $color-bg-widget-category;
     }
@@ -79,7 +79,7 @@ $widget-link-padding: 8px;
         margin-left: -$widget-link-padding;
         margin-right: -$widget-link-padding;
         &:hover {
-          background: url(../img/bg_widget_category_hover.png);
+          background: url(https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_widget_category_hover.png);
         }
       }
       &:last-child {

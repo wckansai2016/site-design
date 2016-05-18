@@ -1,13 +1,13 @@
 //Single page layout style.
 .site-header {
   padding: 36% 0 0;
-  background: url("../img/sub_visual_page.png") center top no-repeat;
+  background: url("https://raw.githubusercontent.com/wckansai2016/site-design/master/img/sub_visual_page.png") center top no-repeat;
   background-size: contain;
   position: relative;
 }
 
 .site-header-main {
-  background: url('../img/bg_global_menu.png') center center repeat;
+  background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu.png') center center repeat;
   @include min-screen($breakpoints-2to1-min) {
     background: none;
   }
@@ -62,7 +62,7 @@
   margin: 0;
   text-align: center;
   @include min-screen($breakpoints-2to1-min) {
-    background: url('../img/bg_global_menu.png') center center repeat;
+    background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu.png') center center repeat;
   }
 }
 .site-header-menu,
@@ -71,9 +71,9 @@
     position: relative;
     background-size: cover;
     margin: 0;
-    background: url('../img/bg_global_menu.png') center center repeat;
+    background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu.png') center center repeat;
     @include min-screen($breakpoints-2to1-min) {
-      background: url('../img/gnavi_cloud_base.png') center bottom no-repeat;
+      background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/gnavi_cloud_base.png') center bottom no-repeat;
       > div {
         height: 90px;
       }
@@ -94,14 +94,14 @@
           left: -300px;
           width: 313px;
           height: 189px;
-          background: url('../img/gnavi_cloud_left.png') center center no-repeat;
+          background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/gnavi_cloud_left.png') center center no-repeat;
         }
         &:after {
           width: 328px;
           height: 193px;
           top: -40px;
           right: -300px;
-          background: url('../img/gnavi_cloud_right.png') center center no-repeat;
+          background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/gnavi_cloud_right.png') center center no-repeat;
         }
       }
       @include min-screen($breakpoints-2to1-min) {
@@ -113,7 +113,7 @@
         border-top: 1px solid rgba($color-white, 0.5);
         padding: 0;
         &:hover {
-          background: url('../img/bg_global_menu_hover.png') center center repeat;
+          background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu_hover.png') center center repeat;
         }
         &:first-child {
           &:before {
@@ -157,7 +157,7 @@
     }
     .sub-menu {
       margin-left: 7.6923%;
-      background: url('../img/bg_global_menu_hover.png') center center repeat;
+      background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu_hover.png') center center repeat;
       li {
         border-top: 1px solid rgba($color-white, 0.3);
         a {
@@ -170,7 +170,7 @@
         li {
           border-color: transparent;
           border-bottom: 1px dotted $color-white;
-          background: url('../img/bg_global_menu_hover.png') center center repeat;
+          background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu_hover.png') center center repeat;
           a {
             width: 16em;
             padding: 30px 40px;
