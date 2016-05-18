@@ -1,0 +1,35 @@
+.page-slug-banners .entry-content,
+.banner-area {
+  dl {
+    margin: 0;
+  }
+  dt {
+    margin-bottom: 5px
+  }
+  dd {
+    padding-left: 40px
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, serif;
+    font-size: 14px;
+    -webkit-hyphens: none;
+    hyphens:         none;
+    background: none;
+  }
+  pre {
+    border: 1px solid $color-grey;
+    background: $color-grey-light;
+    color: #666;
+    margin: 20px 0;
+    padding: 20px;
+    overflow: auto;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+
