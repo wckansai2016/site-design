@@ -34,7 +34,8 @@ $widget-link-padding: 8px;
   }
 
   //Widget Category
-  .widget_categories {
+  .widget_categories,
+  .widget_nav_menu {
     background: $color-bg-widget-category;
     border: 1px solid $color-grey-light;
     //ドロップシャドウの部分、まだ不完全です。
@@ -72,6 +73,7 @@ $widget-link-padding: 8px;
       }
       a {
         display: block;
+        text-shadow: 0 0 1px rgba($color-black, 0.3);
         color: $color-green-dark;
         padding: 18px 22px;
         margin-left: -$widget-link-padding;
