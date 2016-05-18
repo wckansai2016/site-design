@@ -86,9 +86,12 @@
   }
   .entry-footer {
     background: url('../img/wapuuB.png') no-repeat top 20px left 0;
-    background-size: 80px auto;
+    background-size: 50px auto;
     min-height: 80px;
     padding-left: 100px;
+    @include min-screen(480px) {
+      background-size: 80px auto;
+    }
   }
   @include max-screen($breakpoints-fit-min) {
     padding: 15px;

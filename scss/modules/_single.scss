@@ -15,8 +15,11 @@
 	.entry-footer {
 		width: 100%;
 		margin: 0;
-		padding: 20px 0 20px 100px;
+		padding: 20px 0 20px 60px;
 		display: flex;
+        @include min-screen(480px) {
+          padding: 20px 0 20px 100px;
+        }
         .author,
         .byline {
           padding: 0;
@@ -27,24 +30,39 @@
           }
           .url {
             position: absolute;
-            top: -55px;
-            left: 90px;
+            top: -25px;
+            left: 50px;
             line-height: 13px;
-            &:before {
-              font-family: "Genericons";
-              content: "\f411";
-              vertical-align: middle;
-              font-size: 16px;
-              margin-right: 2px;
+            @include min-screen(480px) {
+              top: -55px;
+              left: 90px;
+              &:before {
+                font-family: "Genericons";
+                content: "\f411";
+                vertical-align: middle;
+                font-size: 16px;
+                margin-right: 2px;
+              }
             }
           }
 
         }
+      .byline {
+        width: 40px;
+        height: 40px;
+        @include min-screen(480px) {
+          width: 70px;
+          height: 70px;
+        }
+      }
 		.avatar {
-			width: 70px;
+			width: 40px;
 			height: auto;
 			display: block;
 			margin: 0 20px 0 0;
+            @include min-screen(480px) {
+              width: 70px;
+            }
 			img {
 				margin: 0 auto;
 			}
@@ -52,14 +70,22 @@
 		}
       .posted-on,
       .edit-link {
-        display: inline-block;
+        display: block;
         line-height: 13px;
-        margin: 40px 20px 0 0;
+        margin: 60px 20px 0 0;
+        @include min-screen(480px) {
+          display: inline-block;
+          margin: 40px 20px 0 0;
+        }
         &:after {
           display: none;
         }
       }
       .posted-on {
+        margin-left: -100px;
+        @include min-screen(480px) {
+          margin-left: 20px;
+        }
         &:before {
           font-family: "Genericons";
           content: "\f303";
