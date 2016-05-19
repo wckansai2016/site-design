@@ -41,6 +41,10 @@
       a {
         box-shadow: none;
       }
+      .front-post-wrap {
+        background: rgba($color-white, 0.75);
+        padding: 30px;
+      }
     }
     .front-menu {
       display: -webkit-flex;
@@ -110,10 +114,6 @@
           margin-right: 0;
         }
       }
-    }
-    .front-post-wrap {
-      background: rgba($color-white, 0.75);
-      padding: 30px;
     }
   }
   .sharedaddy {
