@@ -4,9 +4,6 @@
   @include min-screen($breakpoints-fit-min) {
     padding: 60px 4.5455% 0;
   }
-  @include max-screen($breakpoints-fit-max) {
-    padding-top: 20px;
-  }
   .site-main {
     > article {
       background: rgba($color-white, 0.75);
