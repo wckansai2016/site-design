@@ -94,7 +94,6 @@
     }
   }
   @include max-screen($breakpoints-fit-min) {
-    padding: 15px;
     .entry-header,
     .entry-summary,
     .entry-content,

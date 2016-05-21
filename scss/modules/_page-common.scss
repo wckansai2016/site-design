@@ -2,12 +2,12 @@
 .site-content {
   background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/front-contents-img-bg.png') no-repeat top center;
   @include min-screen($breakpoints-2to1-min) {
-    padding: 60px 4.5455% 0;
+    padding: 4.5455% 4.5455% 0;
   }
   .site-main {
     > article {
       background: rgba($color-white, 0.75);
-      padding: 30px;
+      padding: 3%;
     }
     ul {
       margin-left: 1em;
@@ -43,13 +43,7 @@
     }
   }
   .sidebar {
-    @include min-screen($breakpoints-2to1-min) {
-      max-width: 300px;
-      margin-right: 900px;
-    }
-    @include max-screen($breakpoints-2to1-max) {
-      width: 100%;
-    }
+
   }
   .sharedaddy:before,
   .sharedaddy:last-child:after {
