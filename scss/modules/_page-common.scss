@@ -9,6 +9,9 @@
       background: rgba($color-white, 0.75);
       padding: 30px;
     }
+    ul {
+      margin-left: 1em;
+    }
     @include min-screen($breakpoints-2to1-min) {
       min-width: 100%;
       > article {
