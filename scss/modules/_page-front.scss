@@ -9,7 +9,10 @@
   }
     .site .site-content .content-area {
      .entry-content {
-       padding: 0;
+       padding: 3% 3% 0;
+       @include min-screen($breakpoints-2to1-min) {
+         padding: 0;
+       }
      }
     }
     .site-main {
