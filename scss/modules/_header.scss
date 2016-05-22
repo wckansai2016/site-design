@@ -190,10 +190,14 @@
       }
     }
     .dropdown-toggle {
+      width: 100%;
+      height: 100%;
       color: $color-white;
-      right: 7.6923%;
-      top: 15px;
       &:after {
+        position: absolute;
+        top: 30px;
+        right: 7.6923%;
+        left: auto;
         border: none;
         width: auto;
       }
