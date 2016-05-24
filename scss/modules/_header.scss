@@ -44,7 +44,7 @@
   width: 100%;
   border: none;
   background-color: transparent;
-  margin: 15px 7.6923%;
+  margin: 15px 5.333%;
   @include btn-style( $color-white, $color-grey, 60px, 3px );
   color: $color-blue-dark;
   font-size: 16px;
@@ -82,7 +82,6 @@
         left: 0;
         right: auto;
       }
-
     }
     .primary-menu {
       display: block;
@@ -141,7 +140,8 @@
         }
         > a {
           height: 100%;
-          padding: 30px 7.6923%;
+          margin: 0;
+          padding: 35px 5.333%;
           font-size: 16px;
           color: $color-white;
           position: relative;
@@ -162,11 +162,11 @@
       }
     }
     .sub-menu {
-      margin-left: 7.6923%;
+      margin-left: 5.333%;
       background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/bg_global_menu_hover.png') center center repeat;
       li {
         border-top: 1px solid rgba($color-white, 0.3);
-        padding-right: 7.6923%;
+        padding-right: 5.333%;
         a {
           color: $color-white;
           padding: 15px 0;
@@ -190,9 +190,17 @@
       }
     }
     .dropdown-toggle {
-      width: 100%;
-      height: 100%;
+      top: 25px;
+      right: 6.533%;
+      width: 40px;
+      height: 40px;
       color: $color-white;
+      border: 1px solid #233864;
+      background: linear-gradient(#2f5193, #233c76);
+      &.toggled-on {
+        border: 1px solid #122140;
+        background: linear-gradient(#0e1b33, #1d3467);
+      }
       &:after {
         position: absolute;
         top: 30px;
