@@ -3,9 +3,64 @@
 .home {
   .site-header {
     padding: 45% 0 0;
-    background: url("https://raw.githubusercontent.com/wckansai2016/site-design/master/img/main_visual_front.jpg") center top no-repeat;
+    background: url("../img/mv_base.jpg") center top no-repeat;
     background-size: contain;
     position: relative;
+    .site-title {
+      a {
+        width: 90%;
+        padding-top: 40%;
+        background: url("../img/site_title.png") center center no-repeat;
+        background-size: contain;
+        margin: 5% auto 0;
+        position: relative;
+        overflow: inherit;
+        @include min-screen(600px) {
+          width: 70%;
+          padding-top: 30%;
+          margin: 10% auto 0;
+        }
+        @include min-screen($breakpoints-2to1-min) {
+          width: 50%;
+          padding-top: 25%;
+          margin: 20% auto 0;
+        }
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+        }
+        &:before {
+          width: 30%;
+          height: 50%;
+          background: url("../img/wapuu-left.png") center bottom no-repeat;
+          top: 37%;
+          left: -2%;
+          background-size: contain;
+          @include min-screen($breakpoints-2to1-min) {
+            width: 22%;
+            height: 50%;
+            top: -40%;
+            left: 9%;
+          }
+        }
+        &:after {
+          width: 30%;
+          height: 55%;
+          background: url("../img/wapuu-right.png") center bottom no-repeat;
+          top: 33%;
+          right: 2%;
+          background-size: contain;
+          @include min-screen($breakpoints-2to1-min) {
+            width: 20%;
+            height: 50%;
+            top: -40%;
+            right: 10%;
+          }
+        }
+      }
+    }
   }
     .site .site-content .content-area {
      .entry-content {
