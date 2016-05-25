@@ -2,23 +2,31 @@
 
 .home {
   .site-header {
-    padding: 45% 0 0;
+    padding: 80% 0 0;
     background: url("../img/mv_base.jpg") center top no-repeat;
-    background-size: contain;
+    background-size: 200%;
     position: relative;
+    @include min-screen(600px) {
+      padding: 60% 0 0;
+      background-size: 150%;
+    }
+    @include min-screen($breakpoints-2to1-min) {
+      padding: 45% 0 0;
+      background-size: contain;
+    }
     .site-title {
       a {
         width: 90%;
         padding-top: 40%;
         background: url("../img/site_title.png") center center no-repeat;
         background-size: contain;
-        margin: 5% auto 0;
+        margin: 40% auto 0;
         position: relative;
         overflow: inherit;
         @include min-screen(600px) {
           width: 70%;
           padding-top: 30%;
-          margin: 10% auto 0;
+          margin: 30% auto 0;
         }
         @include min-screen($breakpoints-2to1-min) {
           width: 50%;
@@ -35,8 +43,8 @@
           width: 30%;
           height: 50%;
           background: url("../img/wapuu-left.png") center bottom no-repeat;
-          top: 37%;
-          left: -2%;
+          top: -45%;
+          left: 3%;
           background-size: contain;
           @include min-screen($breakpoints-2to1-min) {
             width: 22%;
@@ -49,8 +57,8 @@
           width: 30%;
           height: 55%;
           background: url("../img/wapuu-right.png") center bottom no-repeat;
-          top: 33%;
-          right: 2%;
+          top: -50%;
+          right: 4%;
           background-size: contain;
           @include min-screen($breakpoints-2to1-min) {
             width: 20%;
