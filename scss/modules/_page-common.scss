@@ -41,6 +41,38 @@
     .pagination:after {
       background-color: $color-green;
     }
+    .btn-link {
+      position: relative;
+      font-size: 1.2rem;
+      font-weight: bold;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 40px;
+      display: inline-block;
+      text-decoration: none;
+      color: rgba($color-black,0.7);
+      box-shadow: 2px 2px 4px rgba($color-black,0.2);
+      border-radius: 5px;
+      border: 1px solid $color-green;
+      background: $color-green;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.88, $color-green), color-stop(0.00, $color-white));
+      background: -webkit-linear-gradient(top, $color-white 0%, $color-green 88%);
+      background: -moz-linear-gradient(top, $color-white 0%, $color-green 88%);
+      background: -o-linear-gradient(top, $color-white 0%, $color-green 88%);
+      background: -ms-linear-gradient(top, $color-white 0%, $color-green 88%);
+      background: linear-gradient(to bottom, $color-white 0%, $color-green 88%);
+    }
+    .btn-link:hover {
+      color: $color-white;
+      text-shadow: 1px 1px 1px rgba($color-black,0.5);
+      background: $color-green;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.88, $color-green), color-stop(0.00, $color-white));
+      background: -moz-linear-gradient(top, $color-green 20%, $color-white 100%);
+      background: -o-linear-gradient(top, $color-green 20%, $color-white 100%);
+      background: -ms-linear-gradient(top, $color-green 20%, $color-white 100%);
+      background: linear-gradient(to bottom, $color-green 20%, $color-white 100%);
+      box-shadow: 0px 0px 0px;
+    }
   }
   .sidebar {
 
