@@ -105,10 +105,13 @@
       }
     }
   }
-  .page-links a {
-    background: $color-green;
-    border-color: $color-green;
-    border-radius: 0;
+  .page-links {
+     margin-bottom: 30px;
+     a {
+        background: $color-green;
+        border-color: $color-green;
+        border-radius: 0;
+    }
   }
 }
 .page .site .site-content .content-area {
