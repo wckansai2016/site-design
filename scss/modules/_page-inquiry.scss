@@ -3,7 +3,7 @@
 .entry-content {
   .contact-form {
     padding: 0 0 0 1.3125em;
-    label {
+    label.grunion-field-label {
       font-size: 1rem;
       font-weight: bold;
       margin: 0 0 1em -1.0625em;
@@ -61,7 +61,8 @@
     input[type="search"],
     input[type="tel"],
     input[type="number"],
-    textarea {
+    textarea,
+    select {
       background: $color-white;
       border: 1px solid #9dc120;
       border-radius: 0;
@@ -77,10 +78,14 @@
     input[type="search"]:focus,
     input[type="tel"]:focus,
     input[type="number"]:focus,
-    textarea:focus {
+    textarea:focus,
+    select:focus {
       background: $color-white;
       border-color: #9dc120;
       color: $color-text;
+    }
+    select {
+      width: 100%;
     }
   }
 }
