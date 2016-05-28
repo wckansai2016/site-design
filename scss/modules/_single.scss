@@ -41,12 +41,12 @@
           left: 85px;
         }
         &:before {
-            font-family: "Genericons";
-            content: '';
-            vertical-align: middle;
-            font-size: 19px;
-            margin-right: 5px;
-            color: $color-postmeta;
+          font-family: "Genericons";
+          content: '';
+          vertical-align: middle;
+          font-size: 19px;
+          margin-right: 5px;
+          color: $color-postmeta;
         }
       }
 
@@ -106,7 +106,7 @@
     }
     .cat-links {
       display: none;
-     }
+    }
     .posted-on {
       &:before {
         font-family: "Genericons";
