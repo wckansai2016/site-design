@@ -119,7 +119,7 @@
 
 .single, .blog {
   .entry-content {
-    > :first-child {
+    > p:first-child {
       padding-right: 140px;
     }
   }
