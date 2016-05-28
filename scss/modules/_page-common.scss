@@ -4,6 +4,11 @@
   @include min-screen($breakpoints-2to1-min) {
     padding: 4.5455% 4.5455% 0;
   }
+  .content-area {
+    @include max-screen($breakpoints-2to1-max) {
+      padding: 3% 3% 0;
+    }
+  }
   .site-main {
     > article {
       background: rgba($color-white, 0.75);
