@@ -2,15 +2,15 @@
 ** Don't delete this file.
 ** Author: T. Okashita (@gouten5010)
 */
-.wcorg-organizer-introduction:before {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-introduction:before {
     content: "\f476";
 }
 
-.wcorg-organizer-url li:before {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-url li:before {
     content: "\f429";
 }
 
-.wcorg-organizer-url a:after {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-url a:after {
     content: "\f442";
 }
 
@@ -18,6 +18,7 @@
     content: "\f303";
 }
 
-.site .site-content .content-area .entry-footer .author .url :before {
+.site .site-content .content-area .entry-footer .author .url:before,
+.site .site-content .content-area .entry-footer .byline .url:before {
     content: "\f411";
 }
