@@ -9,13 +9,16 @@
   .entry-content {
     width: 100%;
     margin: 0;
-    padding: 30px 0;
+    padding: 30px 0 0;
+    @include min-screen(480px) {
+      padding: 30px 0 15px;
+    }
   }
-
   .entry-footer {
     width: 100%;
+    min-height: 107px;
     margin: 0;
-    padding: 20px 0 20px 60px;
+    padding: 20px 0 20px 53px;
     display: flex;
     @include min-screen(480px) {
       padding: 20px 0 20px 100px;
@@ -30,19 +33,20 @@
       }
       .url {
         position: absolute;
-        top: -25px;
-        left: 50px;
+        top: -35px;
+        left: 45px;
         line-height: 13px;
         @include min-screen(480px) {
-          top: -55px;
-          left: 90px;
-          &:before {
-            font-family: "Genericons";
-            content: "";
-            vertical-align: middle;
-            font-size: 16px;
-            margin-right: 2px;
-          }
+          top: -60px;
+          left: 85px;
+        }
+        &:before {
+          font-family: "Genericons";
+          content: '';
+          vertical-align: middle;
+          font-size: 19px;
+          margin-right: 5px;
+          color: $color-postmeta;
         }
       }
 
@@ -50,9 +54,20 @@
     .byline {
       width: 40px;
       height: 40px;
+      margin: 0 5px 0 0;
+      display: inline;
       @include min-screen(480px) {
         width: 70px;
         height: 70px;
+        margin: 0 15px 0 0;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        @include min-screen(480px) {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
     .avatar {
@@ -69,29 +84,37 @@
 
     }
     .posted-on,
+    .comments-link,
     .edit-link {
       display: block;
       line-height: 13px;
-      margin: 60px 20px 0 0;
+      margin: 24px 0.3rem 0 0;
       @include min-screen(480px) {
         display: inline-block;
-        margin: 40px 20px 0 0;
+        margin: 40px 0.5rem 0 0;
       }
       &:after {
         display: none;
       }
     }
-    .posted-on {
-      margin-left: -100px;
-      @include min-screen(480px) {
-        margin-left: 20px;
+    .comments-link,
+    .edit-link {
+      &:before {
+        content: '/';
+        margin-right: 0.5rem;
       }
+    }
+    .cat-links {
+      display: none;
+    }
+    .posted-on {
       &:before {
         font-family: "Genericons";
-        content: "";
+        content: '';
         vertical-align: middle;
-        font-size: 16px;
-        margin-right: 2px;
+        font-size: 19px;
+        margin-right: 5px;
+        color: $color-postmeta;
       }
     }
   }
