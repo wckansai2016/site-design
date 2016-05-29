@@ -14,8 +14,13 @@
       background: rgba($color-white, 0.75);
       padding: 3%;
     }
-    ul {
+    ul,ol {
       margin-left: 1em;
+    }
+    .entry-content blockquote:not(.alignleft):not(.alignright),
+    .entry-summary blockquote,
+    .comment-content blockquote {
+      margin-left: 0;
     }
     @include min-screen($breakpoints-2to1-min) {
       min-width: 100%;
