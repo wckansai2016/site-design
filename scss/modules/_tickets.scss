@@ -1,4 +1,6 @@
 //Ticket
+
+
 .site-content {
   .content-area {
     .tix-attendee-list {
@@ -38,6 +40,14 @@
     th,
     td {
       text-align: center;
+      vertical-align: middle;
+      font-size: 0.9rem;
+      @include max-screen(600px) {
+        text-align: left;
+      }
+      input {
+        width: 100%;
+      }
     }
     .tix-column-description {
       width: 50%;
