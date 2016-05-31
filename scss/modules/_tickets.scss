@@ -6,16 +6,8 @@
       a {
         text-decoration: none;
         box-shadow: 0 0 0 0;
-      }
-      .tix-attendee-url {
-        padding-left: 1em;
-        position: relative;
-        &:before {
-        	font-family: "dashicons";
-        	content: "\f102";
-          position: absolute;
-          left: 0;
-          top:0;
+        &.tix-attendee-url {
+          text-decoration: underline;
         }
       }
     }
