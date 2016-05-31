@@ -8,6 +8,9 @@
     border-left: 5px solid $color-green;
     padding-left: 20px;
     min-height: 25px;
+    &.ticket-title {
+      margin: 1em 0;
+    }
   }
   h3 {
     font-size: 22px;
@@ -24,9 +27,15 @@
     th {
       background: rgba($color-green, 0.3);
     }
+    td {
+      background: $color-white;
+    }
   }
   ul {
     list-style-type: square;
+  }
+  ul,ol {
+    margin-left: 2em;
   }
   @include max-screen($breakpoints-2to1-max) {
     .post-thumbnail,

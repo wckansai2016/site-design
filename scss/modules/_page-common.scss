@@ -4,13 +4,20 @@
   @include min-screen($breakpoints-2to1-min) {
     padding: 4.5455% 4.5455% 0;
   }
+  .content-area {
+    @include max-screen($breakpoints-2to1-max) {
+      padding: 3% 3% 0;
+    }
+  }
   .site-main {
     > article {
       background: rgba($color-white, 0.75);
-      padding: 3%;
+      padding: 30px 15px 15px;
     }
-    ul {
-      margin-left: 1em;
+    .entry-content blockquote:not(.alignleft):not(.alignright),
+    .entry-summary blockquote,
+    .comment-content blockquote {
+      margin-left: 0;
     }
     @include min-screen($breakpoints-2to1-min) {
       min-width: 100%;
