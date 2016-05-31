@@ -1,0 +1,47 @@
+//Ticket
+.site-content {
+  .content-area {
+    .tix-attendee-list {
+      a {
+        text-decoration: none;
+        box-shadow: 0 0 0 0;
+      }
+      .tix-attendee-url {
+        padding-left: 1em;
+        position: relative;
+        &:before {
+        	font-family: "dashicons";
+        	content: "\f102";
+          position: absolute;
+          left: 0;
+          top:0;
+        }
+      }
+    }
+  }
+
+  @include max-screen($breakpoints-2to1-max) {
+    #tix-attendees {
+      .tix-columns-3 {
+         li {
+           width: 49%;
+           margin-right: 2%;
+           &:nth-child(even) {
+             margin-right: 0;
+           }
+         }
+       }
+     }
+   }
+
+  .tix_tickets_table {
+    th,
+    td {
+      text-align: center;
+    }
+    .tix-column-description {
+      width: 50%;
+      text-align: left;
+    }
+  }
+}

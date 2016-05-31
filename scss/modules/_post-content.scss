@@ -24,6 +24,9 @@
     th {
       background: rgba($color-green, 0.3);
     }
+    td {
+      background: $color-white;
+    }
   }
   ul {
     list-style-type: square;
