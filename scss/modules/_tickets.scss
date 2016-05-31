@@ -1,6 +1,5 @@
 //Ticket
 
-
 .site-content {
   .content-area {
     .tix-attendee-list {
@@ -22,19 +21,34 @@
     }
   }
 
-  @include max-screen($breakpoints-2to1-max) {
-    #tix-attendees {
-      .tix-columns-3 {
-         li {
-           width: 49%;
-           margin-right: 2%;
-           &:nth-child(even) {
-             margin-right: 0;
-           }
-         }
-       }
-     }
-   }
+  #tix-attendees {
+    .tix-columns-3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+      li {
+        width: 30%;
+        flex-basis: 30%;
+        height: auto;
+        @include max-screen(720px) {
+          width: 48%;
+          flex-basis: 48%;
+        }
+        @include max-screen(480px) {
+          width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &:after {
+        display: block;
+        content: '';
+        max-width: 30%;
+        height: 0;
+        flex-basis: 30%;
+      }
+    }
+  }
 
   .tix_tickets_table {
     th,
