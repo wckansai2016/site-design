@@ -1,11 +1,11 @@
 //Post view : WYSIWYG style.
 .site-main {
   h1 {
-    font-size: 32px;
+    font-size: 24px;
   }
   h2 {
-    font-size: 25px;
     border-left: 5px solid $color-green;
+    font-size: 22px;
     padding-left: 20px;
     min-height: 25px;
     &.ticket-title {
@@ -13,10 +13,13 @@
     }
   }
   h3 {
-    font-size: 22px;
     border-left: 3px solid $color-green;
+    font-size: 20px;
     padding-left: 20px;
     min-height: 25px;
+  }
+  .entry-title {
+    font-size: 22px;
   }
   table {
     border-collapse: collapse;

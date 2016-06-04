@@ -131,3 +131,13 @@ body:not(.search-results) {
     }
   }
 }
+
+.post-navigation {
+  .post-title,
+  .meta-nav {
+    font-size: 20px;
+    @include max-screen(480px) {
+      font-size: 18px;
+    }
+  }
+}
