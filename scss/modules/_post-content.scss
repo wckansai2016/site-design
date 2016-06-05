@@ -1,11 +1,11 @@
 //Post view : WYSIWYG style.
 .site-main {
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   h2 {
     border-left: 5px solid $color-green;
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 20px;
     min-height: 25px;
     &.ticket-title {
@@ -14,8 +14,9 @@
   }
   h3 {
     border-left: 3px solid $color-green;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 20px;
+    line-height: 1.5;
     min-height: 25px;
   }
   .entry-title {
@@ -61,20 +62,21 @@
     }
   }
   .entry-title {
-    padding: 0 100px 15px 0;
+    padding: 0 4em 15px 0;
     margin-bottom: 0;
     border: none;
     border-bottom: 8px solid $color-green;
     position: relative;
     overflow: inherit;
     &::after {
-      position: absolute;
-      background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/wapuuA.png') no-repeat;
-      bottom: -70px;
-      right: 0;
       content: ' ';
-      width: 116px;
-      height: 140px;
+      background: url('//raw.githubusercontent.com/wckansai2016/site-design/master/img/wapuuA.png') no-repeat;
+      background-size:contain;
+      bottom: -2em;
+      height: 4.5em;
+      position: absolute;
+      right: 0;
+      width: 4em;
     }
   }
   .has-post-thumbnail {
@@ -92,7 +94,7 @@
     opacity: 1;
   }
   .entry-footer {
-    background: url('https://raw.githubusercontent.com/wckansai2016/site-design/master/img/wapuuB.png') no-repeat top 20px left 0;
+    background: url('//raw.githubusercontent.com/wckansai2016/site-design/master/img/wapuuB.png') no-repeat top 20px left 0;
     background-size: 50px auto;
     min-height: 80px;
     padding-left: 100px;
@@ -110,12 +112,11 @@
       margin-left: 0;
     }
     .entry-title::after {
-      background-size: 80px 96px;
-      top: 0;
       right: 0;
-      content: ' ';
-      width: 80px;
-      height: 96px;
+      width: 3em;
+      height: 3.5em;
+      background-size: contain;
+      bottom: -1em;
     }
     .post-thumbnail {
       margin: 0 0 1.75em 0;
