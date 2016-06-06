@@ -28,16 +28,17 @@
       padding: 0;
       position: relative;
       z-index: 10;
+      display: block;
       &:after {
         display: none;
       }
       .url {
         position: absolute;
-        top: -35px;
+        top: 5px;
         left: 45px;
         line-height: 13px;
         @include min-screen(480px) {
-          top: -60px;
+          top: 15px;
           left: 85px;
         }
         &:before {
