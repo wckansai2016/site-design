@@ -70,15 +70,15 @@
       }
     }
   }
-    .site .site-content .content-area {
-     .entry-content {
-       padding: 0;
-       @include min-screen($breakpoints-2to1-min) {
-         padding: 0;
-       }
-     }
+  .site .site-content .content-area {
+    .entry-content {
+      padding: 0;
+      @include min-screen($breakpoints-2to1-min) {
+        padding: 0;
+      }
     }
-    .site-main {
+  }
+  .site-main {
     > article {
       background: none;
       padding: 0;
