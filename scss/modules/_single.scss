@@ -20,6 +20,9 @@
     margin: 0;
     padding: 20px 0 20px 53px;
     display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @include min-screen(480px) {
       padding: 20px 0 20px 100px;
     }
