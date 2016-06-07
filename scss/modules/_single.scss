@@ -20,6 +20,9 @@
     margin: 0;
     padding: 20px 0 20px 53px;
     display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @include min-screen(480px) {
       padding: 20px 0 20px 100px;
     }
@@ -28,16 +31,17 @@
       padding: 0;
       position: relative;
       z-index: 10;
+      display: block;
       &:after {
         display: none;
       }
       .url {
         position: absolute;
-        top: -35px;
+        top: 5px;
         left: 45px;
         line-height: 13px;
         @include min-screen(480px) {
-          top: -60px;
+          top: 15px;
           left: 85px;
         }
         &:before {
