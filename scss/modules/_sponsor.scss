@@ -14,8 +14,10 @@
       padding: 5px;
       margin-top: 10px;
       text-align: center;
+      max-height: 300px;
+      box-sizing: border-box;
       img {
-        width: 100%;
+        width: auto;
       }
     }
 
