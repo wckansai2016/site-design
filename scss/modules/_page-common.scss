@@ -70,15 +70,15 @@
         text-align: center;
         width: 100%;
       }
-    }
-    .btn:hover {
-      background: $color-green;
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.88, $color-green), color-stop(0.00, $color-white));
-      background: -moz-linear-gradient(top, $color-green 20%, $color-white 100%);
-      background: -o-linear-gradient(top, $color-green 20%, $color-white 100%);
-      background: -ms-linear-gradient(top, $color-green 20%, $color-white 100%);
-      background: linear-gradient(to bottom, $color-green 20%, $color-white 100%);
-      box-shadow: 0px 0px 0px;
+      &:hover {
+        background: $color-green;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.88, $color-green), color-stop(0.00, $color-white));
+        background: -moz-linear-gradient(top, $color-green 20%, $color-white 100%);
+        background: -o-linear-gradient(top, $color-green 20%, $color-white 100%);
+        background: -ms-linear-gradient(top, $color-green 20%, $color-white 100%);
+        background: linear-gradient(to bottom, $color-green 20%, $color-white 100%);
+        box-shadow: 0px 0px 0px;
+      }
     }
     .btn-link {
       font-size: 1.2rem;
@@ -86,10 +86,44 @@
       color: rgba($color-black, 0.7);
       display: inline-block;
       text-decoration: none;
+      &:hover {
+        color: $color-white;
+        text-shadow: 1px 1px 1px rgba($color-black, 0.5);
+      }
     }
-    .btn-link:hover {
-      color: $color-white;
-      text-shadow: 1px 1px 1px rgba($color-black, 0.5);
+    .btn-post-link {
+      display: block;
+      padding: 1em;
+      background: #8ad830;
+      color: #ffffff;
+      height: auto;
+      line-height: 1.5;
+      text-align: center;
+      border: none;
+      box-shadow: 0 3px 0 #568221;
+      &:hover,&:focus {
+        box-shadow: none;
+        background: #8ad830;
+        transform: translate3d(0, 3px, 0);
+      }
+    }
+    .btn-post-lt {
+      background: #5A92CA;
+      box-shadow: 0 3px 0 #3f658c;
+      &:hover,&:focus {
+        background: #5A92CA;
+      }
+    }
+    .btn-post-connpass {
+      background: #b72613;
+      box-shadow: 0 3px 0 #7c170c;
+      &:hover,&:focus {
+        background: #b72613;
+      }
+    }
+    .btn-post-timetable {
+      margin-top: 1.5em;
+      padding: .5em;
     }
   }
   .sidebar {
